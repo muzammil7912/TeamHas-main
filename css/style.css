@@ -283,22 +283,28 @@ header .container {
 
 }
 
+.nav-list li {
+    position: relative;
+}
+
 .nav-list li:hover .drop-down .drop-content {
-    display: block;
+    /* display: block; */
     z-index: 2;
     visibility: visible;
+    top: 0;
 }
 
 .drop-content {
     margin: 0;
     padding: 0;
     list-style: none;
-    display: none;
+    /* display: none; */
     position: absolute;
     visibility: hidden;
     background-color: #333333;
     min-width: 200px;
     text-align: center;
+    top: 2rem;
     left: -35px;
     color: #fff;
     transition: all 0.3s ease-in;
