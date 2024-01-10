@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Team Has</title>
+  </head>
+
+  <body>
+    <div id="gradient-bg">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="service.html"
+                  >Service
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="portfolio.html"
+                  >Portfolio
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="">Portfolio 1</a></li>
+                    <li><a href="">Portfolio 1</a></li>
+                    <li><a href="">Portfolio 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li class="active">
+                <a href="about.html"
+                  >About us
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#">Book A Call</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <a href="" id="myBtn" class="btn btn-primary">Talk to us</a>
+            </ul>
+          </nav>
+          <nav role="navigation" class="mobile-nav">
+            <div id="menuToggle">
+              <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+              <input type="checkbox" />
+
+              <!--
+                Some spans to act as a hamburger.
+        
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+              <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="service.html">Services</a></li> -->
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="service.html">Service</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Service-1</a></li>
+                      <li><a href="#">Service-2</a></li>
+                      <li><a href="#">Service-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="portfolio.html">Portfolio</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Portfolio-1</a></li>
+                      <li><a href="#">Portfolio-2</a></li>
+                      <li><a href="#">Portfolio-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="about.html">About Us</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">About-1</a></li>
+                      <li><a href="#">About-2</a></li>
+                      <li><a href="#">About-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="about-page pricing-page">
+        <div>
+          <div class="container">
+            <div class="main-content">
+              <h2 data-aos-duration="200" data-aos="fade-up">
+                <span class="heading-gradient">About Us</span>
+              </h2>
+              <h1 data-aos-duration="300" data-aos="fade-up">
+                Crafting Visual Narratives That Resonate
+              </h1>
+              <p data-aos-duration="500" data-aos="fade-up">
+                Welcome to TeamHAS Visionz, where creativity meets innovation.
+                Since our inception in 2017, we've been on a relentless pursuit
+                of design perfection, transforming ideas into visual spectacles
+                that captivate and inspire. Our journey is woven with the
+                threads of passion, dedication, and a deep understanding of the
+                art and science of design. We don't just create; we narrate your
+                story through compelling visuals, leaving a lasting impression.
+              </p>
+            </div>
+
+            <div class="mission">
+              <div class="left" data-aos="fade-left">
+                <h2>Our Mission</h2>
+                <p>
+                  At TeamHAS Visionz, our mission transcends beyond mere design
+                  creation. We aim to be the catalyst for businesses to thrive
+                  in the digital landscape. Our approach is holistic – we
+                  consider every hue, line, and texture to ensure they speak
+                  your brand’s language. We are committed to pushing boundaries,
+                  challenging norms, and setting new standards in the creative
+                  industry. Our mission is not just about delivering outstanding
+                  designs; it’s about igniting brand stories that resonate and
+                  endure.
+                </p>
+              </div>
+              <div class="right" data-aos="fade-right">
+                <img src="imgs/amico.png" alt="" />
+              </div>
+            </div>
+            <div class="mission">
+              <div class="left" data-aos="fade-left">
+                <h2>Our Commitments:</h2>
+                <ul>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>
+                      <b>Innovative Excellence:</b> Continually advancing in
+                      creativity and technology.
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>
+                      <b>Client-Centric Approach:</b> Tailoring solutions to fit
+                      your unique needs.
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>
+                      <b>Quality Assurance:</b> Upholding the highest standards
+                      in every project.
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>
+                      <b>Ethical Practices:</b> Maintaining integrity and
+                      transparency at all times.
+                    </p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>
+                      <b>Sustainable Growth:</b> Fostering long-term
+                      relationships and environmental consciousness.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div class="right" data-aos="fade-right">
+                <img src="imgs/characters.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="gradient-bg-2 choose-us">
+          <div class="container">
+            <h2 class="heading-gradient" data-aos="fade-up">
+              <span class=""
+                >Your One-Stop Studio for Exceptional Design Solutions</span
+              >
+            </h2>
+            <div class="mission">
+              <div class="left" data-aos="fade-left">
+                <h2>Crafting the Future of Your Brand</h2>
+                <p>
+                  Why choose TeamHAS Visionz? Because we understand the power of
+                  good design. Our team is not just a group of designers; we are
+                  strategists, thinkers, and visionaries. We blend artistic
+                  talent with market insights to create designs that do more
+                  than just look good – they work. We believe in building
+                  partnerships, understanding your journey, and being a part of
+                  your success. With us, you're not just getting a service;
+                  you're gaining a partner who is invested in your growth
+                </p>
+              </div>
+              <div class="right" data-aos="fade-right">
+                <img src="imgs/chooseus.png" alt="" />
+              </div>
+            </div>
+            <h2>Key Reasons to Choose Us:</h2>
+            <ul data-aos="fade-left">
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>
+                  <b>Bespoke Creativity:</b> Tailored solutions that embody your
+                  brand's essence.
+                </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>
+                  <b>Proven Track Record:</b> Years of experience with a
+                  portfolio of successful projects.
+                </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>
+                  <b>Holistic Approach:</b> Combining aesthetics with
+                  functionality for impactful results.
+                </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>
+                  <b> Cutting-Edge Techniques: </b>
+                  Utilizing the latest tools and trends in design.
+                </p>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check"></i>
+                <p>
+                  <b>Comprehensive Support: </b>
+                  From initial concept to final execution and beyond.
+                </p>
+              </li>
+            </ul>
+            <div class="get-started" data-aos="fade-left">
+              <a href=""> Get Started Now</a><i class="fa fa-arrow-right"></i>
+            </div>
+          </div>
+        </div>
+        <div class="gradient-bg-2">
+          <div class="faqs">
+            <div class="container">
+              <h2 data-aos="fade-up">
+                <span class="heading-grey">Frequently Asked Questions</span>
+              </h2>
+              <ul>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>
+                      How do you ensure that your designs align with our brand
+                      values?
+                    </p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      We begin each project with an in-depth discussion to
+                      understand your brand’s core values and objectives. Our
+                      design process is deeply rooted in these insights,
+                      ensuring that every creation is not just visually stunning
+                      but also a true reflection of your brand's ethos.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>Can you handle projects with tight deadlines?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Yes, we are adept at managing time-sensitive projects
+                      without compromising on quality. However, we always
+                      encourage early engagement for the best possible outcomes.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>How do you measure the success of your designs?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Success for us is measured by client satisfaction, the
+                      effectiveness of the design in achieving its intended
+                      purpose, and the tangible value it adds to your brand.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>Do you offer post-project support or maintenance?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Absolutely. Our commitment to your project extends beyond
+                      its completion. We offer various levels of post-project
+                      support and are always available for any future
+                      adaptations or iterations.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>
+                      How do you stay updated with the latest design trends and
+                      technologies?
+                    </p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Our team is committed to continuous learning and
+                      improvement. We stay abreast of the latest trends and
+                      technologies through regular training, industry events,
+                      and a culture of innovation.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Get ready for your demo with a couple quick questions.</h2>
+        <form action="">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Name" />
+            <input class="form-control" type="text" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Phone" />
+            <input class="form-control" type="text" placeholder="Subject" />
+          </div>
+          <input class="form-control" type="text" placeholder="Phone" />
+          <textarea
+            placeholder="Cover letter"
+            class="form-control"
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <div class="left">
+            <a href="index.html" data-aos="fade-left">
+              <img class="logo" src="imgs/logo.png" alt=""
+            /></a>
+            <p data-aos="fade-left">
+              I know you think <br />WHO WE ARE AND HOW WE WORK?
+            </p>
+            <ul data-aos-duration="1000" data-aos="fade-left">
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-envelope"></i> info@TeamHas.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-comments-dollar"></i> Livechat</a
+                >
+              </li>
+            </ul>
+            <div class="social" data-aos="fade-down">
+              <a class="social-icon" href="#"
+                ><img src="imgs/twitter 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/facebook 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/instagram 1.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="home" data-aos="fade-up">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li>
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="contact" data-aos="fade-up">
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Book A Call</a></li>
+                <li>
+                  <a href="career.html">careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ser" data-aos="fade-up">
+              <ul>
+                <li><a href="/html/service.html">Services</a></li>
+                <li>
+                  <a href="#">Design</a>
+                </li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Design</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar" data-aos-duration="1000" data-aos="fade-right">
+          <p>All rights reserved.All prices are in USD</p>
+          <ul>
+            <li><a href="/html/service.html">terms</a></li>
+            <li>
+              <a href="#">privacy</a>
+            </li>
+            <li><a href="#">about</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

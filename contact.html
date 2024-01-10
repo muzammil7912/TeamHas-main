@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Team Has</title>
+  </head>
+
+  <body>
+    <div id="gradient-bg">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="service.html"
+                  >Service
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="portfolio.html"
+                  >Portfolio
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="">Portfolio 1</a></li>
+                    <li><a href="">Portfolio 1</a></li>
+                    <li><a href="">Portfolio 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li>
+                <a href="about.html"
+                  >About us
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                   <li><a href="about.html">About</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#">Book A Call</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <a href="" id="myBtn"  class="btn btn-primary">Talk to us</a>
+            </ul>
+          </nav>
+          <nav role="navigation" class="mobile-nav">
+            <div id="menuToggle">
+              <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+              <input type="checkbox" />
+
+              <!--
+                Some spans to act as a hamburger.
+        
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+              <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="service.html">Services</a></li> -->
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="service.html">Service</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Service-1</a></li>
+                      <li><a href="#">Service-2</a></li>
+                      <li><a href="#">Service-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="portfolio.html">Portfolio</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Portfolio-1</a></li>
+                      <li><a href="#">Portfolio-2</a></li>
+                      <li><a href="#">Portfolio-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="about.html">About Us</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">About-1</a></li>
+                      <li><a href="#">About-2</a></li>
+                      <li><a href="#">About-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="contact-page">
+        <div class="main-content">
+          <h2 data-aos-duration="200" data-aos="fade-up">
+            <span class="heading-gradient">Contact Us</span>
+          </h2>
+          <h2 data-aos-duration="300" data-aos="fade-up">HOME | CONTACT</h2>
+        </div>
+        <div class="container">
+          <div class="contact-form">
+            <div class="left" data-aos="fade-right">
+              <h2>CONTACT US</h2>
+              <h3>
+                Have questions?<br />
+                Get in touch!
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor
+              </p>
+            </div>
+            <div class="right">
+              <form action="">
+                <div
+                  class="form-group"
+                  data-aos-duration="200"
+                  data-aos="fade-up"
+                >
+                  <input class="form-control" type="text" placeholder="Name" />
+                  <input class="form-control" type="text" placeholder="Email" />
+                </div>
+                <div
+                  class="form-group"
+                  data-aos-duration="200"
+                  data-aos="fade-up"
+                >
+                  <input class="form-control" type="text" placeholder="Phone" />
+                  <input
+                    class="form-control"
+                    type="text"
+                    placeholder="Subject"
+                  />
+                </div>
+                <textarea
+                  data-aos-duration="200"
+                  data-aos="fade-up"
+                  placeholder="Cover letter"
+                  class="form-control"
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="10"
+                ></textarea>
+                <button
+                  class="btn btn-primary"
+                  data-aos-duration="200"
+                  data-aos="fade-left"
+                >
+                  Submit
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Get ready for your demo with a couple quick questions.</h2>
+        <form action="">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Name" />
+            <input class="form-control" type="text" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Phone" />
+            <input class="form-control" type="text" placeholder="Subject" />
+          </div>
+          <input class="form-control" type="text" placeholder="Phone" />
+          <textarea
+            placeholder="Cover letter"
+            class="form-control"
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <div class="left">
+            <a href="index.html" data-aos="fade-left">
+              <img class="logo" src="imgs/logo.png" alt=""
+            /></a>
+            <p data-aos="fade-left">
+              I know you think <br />WHO WE ARE AND HOW WE WORK?
+            </p>
+            <ul data-aos-duration="1000" data-aos="fade-left">
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-envelope"></i> info@TeamHas.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-comments-dollar"></i> Livechat</a
+                >
+              </li>
+            </ul>
+            <div class="social" data-aos="fade-down">
+              <a class="social-icon" href="#"
+                ><img src="imgs/twitter 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/facebook 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/instagram 1.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="home" data-aos="fade-up">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li>
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="contact" data-aos="fade-up">
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Book A Call</a></li>
+                <li>
+                  <a href="career.html">careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ser" data-aos="fade-up">
+              <ul>
+                <li><a href="/html/service.html">Services</a></li>
+                <li>
+                  <a href="#">Design</a>
+                </li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Design</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar" data-aos-duration="1000" data-aos="fade-right">
+          <p>All rights reserved.All prices are in USD</p>
+          <ul>
+            <li><a href="/html/service.html">terms</a></li>
+            <li>
+              <a href="#">privacy</a>
+            </li>
+            <li><a href="#">about</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

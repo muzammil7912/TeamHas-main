@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Team Has</title>
+  </head>
+
+  <body>
+    <div id="gradient-bg">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="service.html"
+                  >Service
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="portfolio.html"
+                  >Portfolio
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="">Portfolio 1</a></li>
+                    <li><a href="">Portfolio 1</a></li>
+                    <li><a href="">Portfolio 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="active"><a href="pricing.html">Pricing</a></li>
+              <li>
+                <a href="about.html"
+                  >About us
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                   <li><a href="about.html">About</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#">Book A Call</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <a href="" id="myBtn" class="btn btn-primary">Talk to us</a>
+            </ul>
+          </nav>
+          <nav role="navigation" class="mobile-nav">
+            <div id="menuToggle">
+              <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+              <input type="checkbox" />
+
+              <!--
+                Some spans to act as a hamburger.
+        
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+              <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="service.html">Services</a></li> -->
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="service.html">Service</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Service-1</a></li>
+                      <li><a href="#">Service-2</a></li>
+                      <li><a href="#">Service-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="portfolio.html">Portfolio</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Portfolio-1</a></li>
+                      <li><a href="#">Portfolio-2</a></li>
+                      <li><a href="#">Portfolio-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="about.html">About Us</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">About-1</a></li>
+                      <li><a href="#">About-2</a></li>
+                      <li><a href="#">About-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+    <main>
+      <div id="gradient-bg">
+        <div class="pricing-page">
+          <div class="container">
+            <div class="main-content">
+              <h2 data-aos="fade-up">
+                <span class="heading-gradient">Pricing</span>
+              </h2>
+              <h1 data-aos-duration="300" data-aos="fade-up">
+                Your always-on creativity subscription
+              </h1>
+              <p data-aos-duration="700" data-aos="fade-up">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+                doloremque aut excepturi dolore recusandae inventore, temporibus
+                ea libero explicabo ullam expedita accusamus nemo sit veniam,
+              </p>
+            </div>
+
+            <div class="pricing-wrapper">
+              <div
+                class="pricing-card"
+                data-aos-duration="200"
+                data-aos="fade-up"
+              >
+                <!-- <img src="imgs/plant.png" alt="" /> -->
+                <div class="pricing-card-header">
+                  <h6>🌱<span>Starter Pack</span></h6>
+                  <p>
+                    Ideal for Budding<br />
+                    Businesses
+                  </p>
+                </div>
+
+                <p>Price:$499</p>
+                <p>
+                  Embark on your brand journey with a foundational package
+                  designed to establish your visual identity and online presence
+                </p>
+
+                <ul class="card-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Logo and Basic Brand Identity Design</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Social Media Graphics (up to 10)</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Basic web sites Design</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Email support</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>2 revision per Design</p>
+                  </li>
+                </ul>
+
+                <a href="" class="btn btn-primary">Buy Now</a>
+              </div>
+
+              <div
+                class="pricing-card"
+                data-aos-duration="200"
+                data-aos="fade-up"
+              >
+                <h3>Most Popular</h3>
+
+                <div class="pricing-card-body">
+                  <!-- <img src="imgs/rocket.png" alt="" /> -->
+                  <div class="pricing-card-header">
+                    <h6>
+                      🚀<span>Growth Accelerator (Best Value for Money)</span>
+                    </h6>
+                    <p>
+                      For business scaling<br />
+                      New heights
+                    </p>
+                  </div>
+
+                  <p>Price:$999</p>
+                  <p>
+                    Elevate your growing business with a comprehensive package
+                    aimed at enhancing your brand's market appeal and digital
+                    footprint.
+                  </p>
+
+                  <ul class="card-list">
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Advanced Brand Identity Suite</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Social Media Post Designs (up to 15)</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Ad Creatives (up to 5)</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Interactive Website Design with UI/UX Focus</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Motion Graphics for Online Marketing (1 minute)</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>4 Revisions per Design</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Priority Email and Phone Support</p>
+                    </li>
+                  </ul>
+
+                  <a href="" class="btn btn-primary">Buy Now</a>
+                </div>
+              </div>
+
+              <div
+                class="pricing-card"
+                data-aos-duration="200"
+                data-aos="fade-up"
+              >
+                <div class="pricing-card-header">
+                  <h6>🏢<span>Enterprise Solution</span></h6>
+                  <p>Custom Solutions for <br />Large-Scale Projects</p>
+                </div>
+
+                <p>Price: Custom Pricing</p>
+                <!-- <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labso
+                </p> -->
+
+                <ul class="card-list">
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Full-Spectrum Brand Identity Development</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Comprehensive Digital Marketing Material Suite</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Custom Website and App Design</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Advanced Motion Graphics and 3D Modeling</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Dedicated Project Manager and Team</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Unlimited Revisions</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>24/7 Priority Support</p>
+                  </li>
+                </ul>
+
+                <a href="" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+
+            <div class="included-plan">
+              <h2>
+                <span class="heading-grey" data-aos="fade-up"
+                  >INCLUDED IN ALL PLANS</span
+                >
+              </h2>
+
+              <ul class="content-list-1" data-aos="fade-up">
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>30% of total hours can be fast turnaround 12 or 24 hour</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>
+                    Dedicated team made of project Manager, Designers,
+                    Creativity Directors and Customer Success Manager
+                  </p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>
+                    Unlimited users on the superside platform, where project
+                    briefling, Collaboration and reviews happen
+                  </p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>Support of multiple brands</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>Complete time zone coverage</p>
+                </li>
+                <li>
+                  <i class="fa-solid fa-circle-check"></i>
+                  <p>
+                    Personalize onboarding at the start of the relationship as
+                    well as for new users
+                  </p>
+                </li>
+              </ul>
+
+              <p class="download" data-aos-duration="1000" data-aos="fade-left">
+                <img src="imgs/download.png" alt="" /> Compare each plan
+              </p>
+            </div>
+          </div>
+
+          <div class="faqs">
+            <div class="container">
+              <h2 data-aos="fade-up">
+                <span class="heading-grey">Frequently Asked Questions</span>
+              </h2>
+              <ul>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>What do you mean by unlimited revisions?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fugit natus veritatis sunt totam. Eum dignissimos nulla
+                      tenetur sed nesciunt. Odit rem nihil ut saepe vitae. Fugit
+                      natus veritatis sunt totam. Eum dignissimos nulla tenetur
+                      sed nesciunt. Odit rem nihil ut saepe vitae.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>What do you mean by unlimited revisions?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fugit natus veritatis sunt totam. Eum dignissimos nulla
+                      tenetur sed nesciunt. Odit rem nihil ut saepe vitae. Fugit
+                      natus veritatis sunt totam. Eum dignissimos nulla tenetur
+                      sed nesciunt. Odit rem nihil ut saepe vitae.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>What do you mean by unlimited revisions?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fugit natus veritatis sunt totam. Eum dignissimos nulla
+                      tenetur sed nesciunt. Odit rem nihil ut saepe vitae. Fugit
+                      natus veritatis sunt totam. Eum dignissimos nulla tenetur
+                      sed nesciunt. Odit rem nihil ut saepe vitae.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>What do you mean by unlimited revisions?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fugit natus veritatis sunt totam. Eum dignissimos nulla
+                      tenetur sed nesciunt. Odit rem nihil ut saepe vitae. Fugit
+                      natus veritatis sunt totam. Eum dignissimos nulla tenetur
+                      sed nesciunt. Odit rem nihil ut saepe vitae.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>What do you mean by unlimited revisions?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fugit natus veritatis sunt totam. Eum dignissimos nulla
+                      tenetur sed nesciunt. Odit rem nihil ut saepe vitae. Fugit
+                      natus veritatis sunt totam. Eum dignissimos nulla tenetur
+                      sed nesciunt. Odit rem nihil ut saepe vitae.
+                    </p>
+                  </div>
+                </li>
+                <li class="accordion" data-aos="fade-up">
+                  <div class="accordion-header">
+                    <p>What do you mean by unlimited revisions?</p>
+                    <img src="./imgs/iconoir_plus.png" alt="" />
+                  </div>
+                  <div class="content">
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Fugit natus veritatis sunt totam. Eum dignissimos nulla
+                      tenetur sed nesciunt. Odit rem nihil ut saepe vitae. Fugit
+                      natus veritatis sunt totam. Eum dignissimos nulla tenetur
+                      sed nesciunt. Odit rem nihil ut saepe vitae.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Get ready for your demo with a couple quick questions.</h2>
+        <form action="">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Name" />
+            <input class="form-control" type="text" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Phone" />
+            <input class="form-control" type="text" placeholder="Subject" />
+          </div>
+          <input class="form-control" type="text" placeholder="Phone" />
+          <textarea
+            placeholder="Cover letter"
+            class="form-control"
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <div class="left">
+            <a href="index.html" data-aos="fade-left">
+              <img class="logo" src="imgs/logo.png" alt=""
+            /></a>
+            <p data-aos="fade-left">
+              I know you think <br />WHO WE ARE AND HOW WE WORK?
+            </p>
+            <ul data-aos-duration="1000" data-aos="fade-left">
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-envelope"></i> info@TeamHas.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-comments-dollar"></i> Livechat</a
+                >
+              </li>
+            </ul>
+            <div class="social" data-aos="fade-down">
+              <a class="social-icon" href="#"
+                ><img src="imgs/twitter 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/facebook 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/instagram 1.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="home" data-aos="fade-up">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li>
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="contact" data-aos="fade-up">
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Book A Call</a></li>
+                <li>
+                  <a href="career.html">careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ser" data-aos="fade-up">
+              <ul>
+                <li><a href="/html/service.html">Services</a></li>
+                <li>
+                  <a href="#">Design</a>
+                </li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Design</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar" data-aos-duration="1000" data-aos="fade-right">
+          <p>All rights reserved.All prices are in USD</p>
+          <ul>
+            <li><a href="/html/service.html">terms</a></li>
+            <li>
+              <a href="#">privacy</a>
+            </li>
+            <li><a href="#">about</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

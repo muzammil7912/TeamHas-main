@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Team Has</title>
+  </head>
+
+  <body>
+    <div id="gradient-bg-3">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li><a href="index.html">Home</a></li>
+              <li>
+                <a href="service.html"
+                  >Service
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 1</a></li>
+                    <li><a href="">Service 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="portfolio.html"
+                  >Portfolio
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                    <li><a href="">Portfolio 1</a></li>
+                    <li><a href="">Portfolio 1</a></li>
+                    <li><a href="">Portfolio 1</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li>
+                <a href="about.html"
+                  >About us
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                   <li><a href="about.html">About</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="service.html">Services</a></li>
+                    <li><a href="#">Book A Call</a></li>
+                  </ul>
+                </div>
+              </li>
+
+              <a href="" id="myBtn" class="btn btn-primary">Talk to us</a>
+            </ul>
+          </nav>
+          <nav role="navigation" class="mobile-nav">
+            <div id="menuToggle">
+              <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+              <input type="checkbox" />
+
+              <!--
+                Some spans to act as a hamburger.
+        
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+              <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="service.html">Services</a></li> -->
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="service.html">Service</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Service-1</a></li>
+                      <li><a href="#">Service-2</a></li>
+                      <li><a href="#">Service-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="portfolio.html">Portfolio</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Portfolio-1</a></li>
+                      <li><a href="#">Portfolio-2</a></li>
+                      <li><a href="#">Portfolio-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="about.html">About Us</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">About-1</a></li>
+                      <li><a href="#">About-2</a></li>
+                      <li><a href="#">About-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="about-page career-page">
+        <div class="container">
+          <div class="main-content">
+            <h2 data-aos-duration="200" data-aos="fade-up">
+              <span class="heading-gradient">Careers</span>
+            </h2>
+            <h1 data-aos-duration="400" data-aos="fade-up">
+              Welcome to Our World
+            </h1>
+            <p data-aos-duration="600" data-aos="fade-up">
+              At TeamHAS Visionz, we don't just offer jobs; we offer journeys.
+              We believe in nurturing talent and fostering an environment where
+              creativity and innovation flourish. Join us, and become part of a
+              dynamic team that's reshaping the landscape of digital design.
+            </p>
+            <a href="" class="btn btn-primary">Join us</a>
+          </div>
+          <div class="statics-wrapper">
+            <div class="statics" data-aos-duration="200" data-aos="fade-up">
+              <p>People at TeamHAS</p>
+              <h2><span class="heading-gradient">150+</span></h2>
+              <p>Innovative Minds</p>
+            </div>
+
+            <div class="statics" data-aos-duration="300" data-aos="fade-up">
+              <p>Number of Countries</p>
+              <h2><span class="heading-gradient">15+</span></h2>
+              <p>Present in 15+ Countries</p>
+            </div>
+
+            <div class="statics" data-aos-duration="400" data-aos="fade-up">
+              <p>Amount of Timezones</p>
+              <h2><span class="heading-gradient">10+</span></h2>
+              <p>Spanning Over 10 Timezones</p>
+            </div>
+
+            <div class="statics" data-aos-duration="500" data-aos="fade-up">
+              <p>Amount of Customers</p>
+              <h2><span class="heading-gradient">5000+</span></h2>
+              <p>Delighting 5000+ Customers Worldwide</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="career-inner">
+          <div class="container">
+            <div class="remote-company">
+              <div class="left" data-aos="fade-right">
+                <h2>Embrace the Freedom of a Remote-First Workplace</h2>
+                <p>
+                  TeamHAS Visionz is a native remote company, and we've mastered
+                  the art of virtual collaboration. Here, you'll find the
+                  flexibility to work from anywhere, balanced with a deep
+                  connection to a global team. We value autonomy, but never at
+                  the expense of teamwork and shared success.
+                </p>
+              </div>
+
+              <div class="right" data-aos="fade-left">
+                <img src="imgs/astronaut.png" alt="" />
+              </div>
+            </div>
+            <div class="remote-company">
+              <div class="left" data-aos="fade-right">
+                <h2>Innovate, Grow, and Excel with Us</h2>
+                <p>
+                  We are committed to your professional and personal growth. At
+                  TeamHAS Visionz, you'll have opportunities to work on diverse
+                  projects, enhance your skills with continuous learning, and
+                  collaborate with some of the brightest minds in the industry.
+                </p>
+              </div>
+
+              <div class="right" data-aos="fade-left">
+                <img src="imgs/rafiki.png" alt="" />
+              </div>
+            </div>
+            <div class="team">
+              <h2 data-aos="fade-up">
+                Meet <span class="heading-gradient">our team</span>
+              </h2>
+              <p data-aos="fade-up">
+                Our team is the heartbeat of TeamHAS Visionz. Meet the creative
+                minds and strategic thinkers who make the magic happen:
+              </p>
+
+              <h2 data-aos="fade-up">
+                <span class="heading-gradient">Our Team</span>
+              </h2>
+
+              <div class="team-card-wrapper">
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team6.png" alt="" />
+                  <p>Emma Johnson</p>
+                  <p>Creative Director</p>
+                </div>
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team7.png" alt="" />
+                  <p>Liam Smith</p>
+                  <p>Head of UI/UX Design</p>
+                </div>
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team8.png" alt="" />
+                  <p>Sophia Lee</p>
+                  <p>Lead Graphic Designer</p>
+                </div>
+
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team9.png" alt="" />
+                  <p>Mason Brown</p>
+                  <p>Senior Animator</p>
+                </div>
+
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team10.png" alt="" />
+                  <p>Isabella Garcia</p>
+                  <p>Brand Strategist</p>
+                </div>
+
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team11.png" alt="" />
+                  <p>Ethan Nguyen</p>
+                  <p>Head of Web Development</p>
+                </div>
+
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team12.png" alt="" />
+                  <p>Ava Martinez</p>
+                  <p>Senior Illustrator</p>
+                </div>
+
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team12.png" alt="" />
+                  <p>Noah Kim</p>
+                  <p>3D Modeling Expert</p>
+                </div>
+
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team10.png" alt="" />
+                  <p>Olivia Sanchez</p>
+                  <p>Chief Marketing Officer</p>
+                </div>
+
+                <div class="team-card" data-aos="fade-up">
+                  <img src="imgs/team7.png" alt="" />
+                  <p>Jackson Davis</p>
+                  <p>E-Learning Specialist</p>
+                </div>
+              </div>
+
+              <div class="services">
+                <h2 data-aos="fade-up">
+                  What Kind of
+                  <span class="heading-gradient"> Creative Talent</span> We're
+                  Looking For
+                </h2>
+                <div class="services-wrapper">
+                  <div class="service-card" data-aos="fade-up">
+                    <img src="imgs/Vector.png" alt="" />
+                    <h2>Social Media Creative</h2>
+                    <p>
+                      We need innovators who can craft compelling social media
+                      content that resonates and engages. Your designs should
+                      tell stories, evoke emotions, and drive engagement.
+                    </p>
+                  </div>
+
+                  <div class="service-card" data-aos="fade-up">
+                    <img src="imgs/vector2.png" alt="" />
+                    <h2>Promotional Post Designer</h2>
+                    <p>
+                      Seeking creative minds that can conceptualize and execute
+                      stunning promotional posts. Your designs should not only
+                      attract attention but also convey the brand's message
+                      powerfully.
+                    </p>
+                  </div>
+
+                  <div class="service-card" data-aos="fade-up">
+                    <img src="imgs/Vector 3.png" alt="" />
+                    <h2>Comic Artist</h2>
+                    <p>
+                      If you can bring stories to life through captivating comic
+                      art, we want you. Your ability to create engaging
+                      narratives through illustrations is what we’re looking
+                      for.
+                    </p>
+                  </div>
+
+                  <div class="service-card" data-aos="fade-up">
+                    <img src="imgs/vector4.png" alt="" />
+                    <h2>E-Learning Design Specialist</h2>
+                    <p>
+                      We're looking for creators who can design interactive and
+                      educational e-learning experiences. Your designs should
+                      simplify complex information and make learning enjoyable.
+                    </p>
+                  </div>
+
+                  <div class="service-card" data-aos="fade-up">
+                    <img src="imgs/vector5.png" alt="" />
+                    <h2>Packaging Designer</h2>
+                    <p>
+                      We need visionaries who understand that packaging is part
+                      of the product experience. Your innovative designs should
+                      make products stand out and speak to consumers.
+                    </p>
+                  </div>
+
+                  <div class="service-card" data-aos="fade-up">
+                    <img src="imgs/Vector6.png" alt="" />
+                    <h2>3D Model Creator</h2>
+                    <p>
+                      If you excel in creating detailed and lifelike 3D models,
+                      join us. Your skills will bring concepts and products to
+                      life in a way that captivates and impresses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="open-position" data-aos="fade-up">
+              <div class="left">
+                <p>Explore Opportunities at TeamHAS Visionz</p>
+                <h2>
+                  For all current openings, reach out to us at
+
+                  <span class="heading-gradient"> careers@teamhas.net</span>
+                </h2>
+                <p>
+                  Don't see a role that fits? We're always on the lookout for
+                  exceptional talent. Drop us your portfolio and let us know how
+                  you can make a difference at TeamHAS Visionz.
+                </p>
+                <a href="" class="btn btn-primary">Apply now</a>
+              </div>
+              <div class="right">
+                <img src="imgs/amico-banner.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Get ready for your demo with a couple quick questions.</h2>
+        <form action="">
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Name" />
+            <input class="form-control" type="text" placeholder="Email" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="text" placeholder="Phone" />
+            <input class="form-control" type="text" placeholder="Subject" />
+          </div>
+          <input class="form-control" type="text" placeholder="Phone" />
+          <textarea
+            placeholder="Cover letter"
+            class="form-control"
+            name=""
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="wrapper">
+          <div class="left">
+            <a href="index.html" data-aos="fade-left">
+              <img class="logo" src="imgs/logo.png" alt=""
+            /></a>
+            <p data-aos="fade-left">
+              I know you think <br />WHO WE ARE AND HOW WE WORK?
+            </p>
+            <ul data-aos-duration="1000" data-aos="fade-left">
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-envelope"></i> info@TeamHas.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-comments-dollar"></i> Livechat</a
+                >
+              </li>
+            </ul>
+            <div class="social" data-aos="fade-down">
+              <a class="social-icon" href="#"
+                ><img src="imgs/twitter 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/facebook 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/instagram 1.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="home" data-aos="fade-up">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li>
+                  <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="contact" data-aos="fade-up">
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Book A Call</a></li>
+                <li>
+                  <a href="career.html">careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ser" data-aos="fade-up">
+              <ul>
+                <li><a href="/html/service.html">Services</a></li>
+                <li>
+                  <a href="#">Design</a>
+                </li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Design</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar" data-aos-duration="1000" data-aos="fade-right">
+          <p>All rights reserved.All prices are in USD</p>
+          <ul>
+            <li><a href="/html/service.html">terms</a></li>
+            <li>
+              <a href="#">privacy</a>
+            </li>
+            <li><a href="#">about</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
