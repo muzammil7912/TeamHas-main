@@ -25,34 +25,30 @@
           </div>
           <nav>
             <ul class="nav-list">
-              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="index.html">Home</a></li>
               <li>
                 <a href="service.html"
-                  >Service
+                  >Services
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <div class="drop-down">
                   <ul class="drop-content">
-                    <li><a href="">Service 1</a></li>
-                    <li><a href="">Service 1</a></li>
-                    <li><a href="">Service 1</a></li>
+                    <li><a href="#infographics">Infographics</a></li>
+                    <li><a href="#brandidentity">Brand Identity</a></li>
+                    <li><a href="#merchdesign">Merch Design</a></li>
+                    <li><a href="#animations">Animations</a></li>
+              <a href="service.html" id="" class="btn btn-primary"><span>View All</span></a>
+
                   </ul>
                 </div>
               </li>
               <li>
                 <a href="portfolio.html"
                   >Portfolio
-                  <i class="fa-solid fa-angle-down"></i>
                 </a>
-                <div class="drop-down">
-                  <ul class="drop-content">
-                    <li><a href="">Portfolio 1</a></li>
-                    <li><a href="">Portfolio 1</a></li>
-                    <li><a href="">Portfolio 1</a></li>
-                  </ul>
-                </div>
+               
               </li>
-              <li class="active"><a href="pricing.html">Pricing</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
               <li>
                 <a href="about.html"
                   >About us
@@ -62,13 +58,13 @@
                   <ul class="drop-content">
                    <li><a href="about.html">About</a></li>
                     <li><a href="career.html">Career</a></li>
-                    <li><a href="service.html">Services</a></li>
-                    <li><a href="#">Book A Call</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <a href="" id="" class="btn btn-primary myBtn"><span>Book a Call</span></a>
+
                   </ul>
                 </div>
               </li>
-
-              <a href="" id="myBtn" class="btn btn-primary">Talk to us</a>
+              <a href="" class="btn btn-primary myBtn"><span>Talk to us</span></a>
             </ul>
           </nav>
           <nav role="navigation" class="mobile-nav">
@@ -168,43 +164,81 @@
               >
                 <!-- <img src="imgs/plant.png" alt="" /> -->
                 <div class="pricing-card-header">
-                  <h6>🌱<span>Starter Pack</span></h6>
+                  <div class="pricing-card-title"><img src="/imgs/starter-logo.png" alt="">
+                    <span><h6>Starter Pack</h6></span></div>
                   <p>
-                    Ideal for Budding<br />
-                    Businesses
+                    <span>Made for your</span>
+                  <span class="heading-gradient"> day-to-day 
+                    design needs</span>
                   </p>
                 </div>
 
-                <p>Price:$499</p>
+                <p>Starting at $3,999 per month</p>
                 <p>
-                  Embark on your brand journey with a foundational package
-                  designed to establish your visual identity and online presence
+                  Great for a variety of teams who need design support but not deep channel expertise
                 </p>
 
                 <ul class="card-list">
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Logo and Basic Brand Identity Design</p>
+                    <p>eBook & digital reports</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Social Media Graphics (up to 10)</p>
+                    <p>Print, packaging & merch</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Basic web sites Design</p>
+                    <p>Illustration design</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Email support</p>
+                    <p>Presentation design</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>2 revision per Design</p>
+                    <p>Email design</p>
                   </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Web design</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Static web & social assets</p>
+                  </li>
+                  <li>
+                    <span class=" cross-mark"> x</span>
+                    <p>Digital ads & social media</p>
+                  </li>
+                  <li>
+                    <span class=" cross-mark"> x</span>
+                    <p>Motion design</p>
+                  </li>
+                  <li>
+                    <span class=" cross-mark"> x</span>
+                    <p>Video production</p>
+                  </li>
+                  <li>
+                    <span class=" cross-mark"> x</span>
+                    <p>Campaign concepting</p>
+                  </li>
+                  <li>
+                    <span class=" cross-mark"> x</span>
+                    <p>AR/3D design</p>
+                  </li>
+                  <li>
+                    <span class=" cross-mark"> x</span>
+                    <p>Digital Marketing consulting</p>
+                  </li>
+                  <li>
+                    <span class=" cross-mark"> x</span>
+                    <p>Branding & visual identity</p>
+                  </li>
+                  
                 </ul>
 
-                <a href="" class="btn btn-primary">Buy Now</a>
+                <a href="" class="btn btn-primary buynow"><span>Buy Now</span></a>
               </div>
 
               <div
@@ -217,54 +251,84 @@
                 <div class="pricing-card-body">
                   <!-- <img src="imgs/rocket.png" alt="" /> -->
                   <div class="pricing-card-header">
-                    <h6>
-                      🚀<span>Growth Accelerator (Best Value for Money)</span>
-                    </h6>
+                    <div class="pricing-card-title growth"><img src="/imgs/growth-logo.png" alt="">
+                      <span><h6>Growth Accelerator</h6>
+                      <small><p>(Best value for money)</p></small>
+                      </span>
+                    </div>
                     <p>
-                      For business scaling<br />
-                      New heights
+                      <span>Full-service plan for</span>
+                    <span class="heading-gradient">every creative
+                      need</span>
                     </p>
                   </div>
 
-                  <p>Price:$999</p>
+                  <p>Starting at $8,999 per month</p>
                   <p>
-                    Elevate your growing business with a comprehensive package
-                    aimed at enhancing your brand's market appeal and digital
-                    footprint.
+                    Great for creative teams who enable several marketing and brand functions
                   </p>
 
                   <ul class="card-list">
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>Advanced Brand Identity Suite</p>
+                      <p>eBook & digital reports</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>Social Media Post Designs (up to 15)</p>
+                      <p>Print, packaging & merch</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>Ad Creatives (up to 5)</p>
+                      <p>Illustration design</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>Interactive Website Design with UI/UX Focus</p>
+                      <p>Presentation design</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>Motion Graphics for Online Marketing (1 minute)</p>
+                      <p>Email design</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>4 Revisions per Design</p>
+                      <p>Web design</p>
                     </li>
                     <li>
                       <i class="fa-solid fa-circle-check"></i>
-                      <p>Priority Email and Phone Support</p>
+                      <p>Static web & social assets</p>
                     </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Digital ads & social media</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Motion design</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Video production</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Campaign concepting</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>AR/3D design</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Digital Marketing consulting</p>
+                    </li>
+                    <li>
+                      <i class="fa-solid fa-circle-check"></i>
+                      <p>Branding & visual identity</p>
+                    </li>
+                    
                   </ul>
 
-                  <a href="" class="btn btn-primary">Buy Now</a>
+                  <a href="" class="btn btn-primary"><span>Buy Now</span></a>
                 </div>
               </div>
 
@@ -273,49 +337,84 @@
                 data-aos-duration="200"
                 data-aos="fade-up"
               >
-                <div class="pricing-card-header">
-                  <h6>🏢<span>Enterprise Solution</span></h6>
-                  <p>Custom Solutions for <br />Large-Scale Projects</p>
+              <div class="pricing-card-header">
+                <div class="pricing-card-title growth"><img src="/imgs/enterprise-logo.png" alt="">
+                  <span><h6>Enterprise Solution</h6>
+                  </span>
                 </div>
+                <p>
+                  <span>Powering your</span>
+                <span class="heading-gradient">media buying
+                  strategy</span>
+                </p>
+              </div>
 
-                <p>Price: Custom Pricing</p>
-                <!-- <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labso
-                </p> -->
+                <p>Starting at $7,500 per month</p>
+                <p>
+                  Ad creative, at scale, for performance marketing, growth and social media teams
+                </p>
 
                 <ul class="card-list">
                   <li>
-                    <i class="fa-solid fa-circle-check"></i>
-                    <p>Full-Spectrum Brand Identity Development</p>
+                     <span class=" cross-mark"> x</span>
+                    <p>eBook & digital reports</p>
+                  </li>
+                  <li>
+                     <span class=" cross-mark"> x</span>
+                    <p>Print, packaging & merch</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Comprehensive Digital Marketing Material Suite</p>
+                    <p>Illustration design</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Custom Website and App Design</p>
+                    <p>Presentation design</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Advanced Motion Graphics and 3D Modeling</p>
+                    <p>Email design</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Dedicated Project Manager and Team</p>
+                    <p>Web design</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>Unlimited Revisions</p>
+                    <p>Static web & social assets</p>
                   </li>
                   <li>
                     <i class="fa-solid fa-circle-check"></i>
-                    <p>24/7 Priority Support</p>
+                    <p>Digital ads & social media</p>
                   </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Motion design</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Video production</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Campaign concepting</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>AR/3D design</p>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-circle-check"></i>
+                    <p>Digital Marketing consulting</p>
+                  </li>
+                  <li>
+                    <span class=" cross-mark"> x</span>
+                    <p>Branding & visual identity</p>
+                  </li>
+                  
                 </ul>
 
-                <a href="" class="btn btn-primary">Buy Now</a>
+                <a href="" class="btn btn-primary buynow"><span>Buy Now</span></a>
               </div>
             </div>
 
@@ -362,9 +461,7 @@
                 </li>
               </ul>
 
-              <p class="download" data-aos-duration="1000" data-aos="fade-left">
-                <img src="imgs/download.png" alt="" /> Compare each plan
-              </p>
+             
             </div>
           </div>
 
@@ -504,9 +601,7 @@
             <a href="index.html" data-aos="fade-left">
               <img class="logo" src="imgs/logo.png" alt=""
             /></a>
-            <p data-aos="fade-left">
-              I know you think <br />WHO WE ARE AND HOW WE WORK?
-            </p>
+             
             <ul data-aos-duration="1000" data-aos="fade-left">
               <li>
                 <a href="#">

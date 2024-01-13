@@ -109,12 +109,30 @@ main {
 /* .btn.btn-primary:hover {
     background: rgba(255, 255, 255, 0.1);
 } */
-
-.btn-secondary {
-    background: rgba(255, 255, 255, 0.1);
-
+.btn-primary.btn-secondary{
+    position: relative;
+    overflow: hidden;
+    background: none;
 }
+.btn-primary.btn-secondary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-image-source: linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%);
+    border-image-slice: 1;
+    border-radius: 10px; /* Set your desired border radius */
+    background: none;
 
+  }
+
+.btn.btn-secondary span {
+    position: relative;
+    z-index: 2;
+}
 .btn-secondary:hover {
     background: linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%);
 
@@ -302,8 +320,8 @@ header .container {
     position: absolute;
     visibility: hidden;
     background-color: #333333;
-    min-width: 200px;
-    text-align: center;
+    min-width: 180px;
+    /* text-align: center; */
     top: 2rem;
     left: -35px;
     color: #fff;
@@ -314,10 +332,21 @@ header .container {
     padding: 10px 0;
     display: inline-block;
     font-size: 16px;
+    margin-left: 10px;
 }
 
 .drop-content li:hover {
     background: #636161;
+}
+.drop-content .btn.btn-primary{
+    font-size: 12px;
+    float: left;
+    margin: 10px;
+}
+.flex-center{
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 /* banner */
@@ -773,6 +802,9 @@ header .container {
     margin-bottom: 60px;
 }
 
+.our-plans .main-content h2 {
+    text-align: center;
+}
 .our-plans .card-wrapper {
     width: 80%;
     margin-inline: auto;
@@ -870,8 +902,10 @@ header .container {
 
 .port-card h2 {
     font-size: 25px;
-    margin: 0;
-    font-weight: 100;
+    margin: 20px 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: white;
 }
 
 .port-card img {
@@ -1094,10 +1128,22 @@ footer .social .social-icon {
     transition: all 0.3s ease-in-out;
 }
 
+footer .social .social-icon:hover img {
+    animation: rotate 0.8s linear normal;
+
+}
 footer .social .social-icon:hover {
     transform: scale(1.2);
 }
 
+@keyframes rotate {
+    0% {
+      transform: translateY(0) rotate(0deg);
+    }
+    100% {
+      transform: translateY(0) rotate(360deg);
+    }
+  }
 footer .right {
     display: flex;
     justify-content: space-between;
@@ -1481,6 +1527,8 @@ footer .bottom-bar ul a {
     text-align: center;
     font-size: 30px;
     font-weight: 500;
+    /* width: min-content; */
+
 }
 
 .pricing-page .main-content h1 {
@@ -1547,12 +1595,12 @@ footer .bottom-bar ul a {
 
 }
 
-.pricing-wrapper .pricing-card:nth-child(1) .btn {
-    margin-top: 100px;
+.pricing-wrapper .pricing-card .btn {
+    margin-top: 65px;
 }
 
 .pricing-wrapper .pricing-card:nth-child(2) .btn {
-    margin-top: 50px;
+    margin-top: 40px;
 }
 
 .pricing-wrapper .pricing-card:nth-child(1),
@@ -1576,7 +1624,15 @@ footer .bottom-bar ul a {
 .pricing-card .pricing-card-header {
     border-bottom: 1px solid #ccc6;
 }
-
+.pricing-card-title.growth p{
+  margin: 0;
+}
+.pricing-card-title{
+    display: flex ;
+    align-items: center;
+    gap: 10px;
+    min-height: 70px;
+}
 .pricing-card .card-list {
     padding: 0;
     margin: 0;
@@ -1591,6 +1647,7 @@ footer .bottom-bar ul a {
     align-items: center;
     gap: 5px;
     margin-bottom: 10px;
+    height: 42px;
 }
 
 .pricing-card .btn {
@@ -1643,7 +1700,19 @@ footer .bottom-bar ul a {
 .pricing-page .download p {
     color: #fff;
 }
-
+.cross-mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: rgb(26, 25, 25);
+    color: #c1aeae;
+    margin-right: 9px;
+    font-weight: 100;
+    border-radius: 21px;
+    width: 35px;
+    height: 35px;
+}
 .fa-circle-check {
     display: flex;
     justify-content: center;
@@ -1655,7 +1724,14 @@ footer .bottom-bar ul a {
     -webkit-text-fill-color: transparent;
 
     width: 42px;
-    height: 42px;
+    /* height: 42px; */
+}
+.pricing-card .buynow {
+   display: none;
+}
+
+.pricing-card:hover .buynow{
+    display: block;    
 }
 
 @media screen and (max-width: 1200px) {
@@ -2279,6 +2355,8 @@ footer .bottom-bar ul a {
     display: none;
     justify-content: center;
     align-items: center;
+    backdrop-filter: blur(8px);
+    
     /* Black w/ opacity */
 }
 
@@ -2291,9 +2369,17 @@ footer .bottom-bar ul a {
     padding: 20px;
     border: 1px solid #000;
     width: 50%;
+    animation: slideFromTop 1s ease;
     /* Could be more or less, depending on screen size */
 }
-
+@keyframes slideFromTop {
+    from {
+      transform: translateX(80%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
 .modal h2 {
     font-size: 24px;
 
@@ -2329,6 +2415,63 @@ footer .bottom-bar ul a {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+.brands-slider-images>img{
+    max-width: 220px;
+    max-height: 60px;
+    mix-blend-mode: multiply;
+}
+.scroll {
+    display: flex;
+ gap: 40px;
+    /* animation properties */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(50%);
+    transform: translateX(100%);
+    
+    -moz-animation: my-animation 20s linear infinite;
+    -webkit-animation: my-animation 20s linear infinite;
+    animation: my-animation 33s linear infinite;
+  }
+.scroll.reverse {
+    margin-top: 20px;
+    animation: my-animation-reverse 54s linear infinite !important;
+   
+}
+  
+  /* for Firefox */
+  @-moz-keyframes my-animation {
+    from { -moz-transform: translateX(100%); }
+    to { -moz-transform: translateX(-100%); }
+  }
+  
+  /* for Chrome */
+  @-webkit-keyframes my-animation {
+    from { -webkit-transform: translateX(100%); }
+    to { -webkit-transform: translateX(-100%); }
+  }
+  
+  @keyframes my-animation {
+    from {
+      -moz-transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      transform: translateX(40%);
+    }
+    to {
+      -moz-transform: translateX(-100%);
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+}
+  @keyframes my-animation-reverse {
+    from {
+     
+      transform: translateX(-40%);
+    }
+    to {
+      
+      transform: translateX(100%);
+    }
 }
 
 @media screen and (max-width: 1200px) {
