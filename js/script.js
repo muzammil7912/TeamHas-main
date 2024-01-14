@@ -3,10 +3,9 @@ var acc = document.getElementsByClassName("accordion-header");
 var i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
+  acc[i].addEventListener("mouseenter", function () {
+    this.classList.add("active");
     var panel = this.nextElementSibling;
-    console.log(this.nextElementSibling);
     if (panel.style.maxHeight) {
       panel.style.maxHeight = null;
       panel.style.borderWidth = "0px";
@@ -17,7 +16,32 @@ for (i = 0; i < acc.length; i++) {
       panel.style.marginBottom = "20px";
     }
   });
+
+  acc[i].addEventListener("mouseleave", function () {
+    this.classList.add("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.style.borderWidth = "0px";
+      panel.style.marginBottom = "0px";
+    }
+  });
 }
+
+const moreAccordion=document.querySelector(".more-accordion");
+const accordionHidden=document.querySelector(".accordion-hidden")
+
+moreAccordion.addEventListener("click",function(){
+  if (this.classList.contains("active")) {
+    this.classList.remove("active");
+    accordionHidden.classList.remove("active");
+  } else {
+    this.classList.add("active");
+    accordionHidden.classList.add("active");
+  }
+
+})
+
 
 // var swiper = new Swiper(".brands-slider", {
 //   slidesPerView: 5,
