@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=B612&family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Domine:wght@500&family=Lato:wght@300&family=Metrophobic&display=swap');
 *,
 *::after,
 *::before {
@@ -182,7 +182,7 @@ h1 {
 
 h2 {
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .heading-underline {
@@ -528,6 +528,26 @@ align-items: center;
 
     margin-top: 0px;
 }
+
+
+
+.cursor {
+    pointer-events: none;
+}
+
+.cursor__circle {
+    position: fixed;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 1000;
+}
+
+.cursor__circle circle {
+    fill:white ;
+}
+
+
 
 
 
@@ -985,7 +1005,7 @@ align-items: center;
     width: 0%;
     height: 100%;
     background: linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%);
-    transition: width 0.7s ease; /* Transition only the width property for a smoother effect */
+    transition: width 1s ease; /* Transition only the width property for a smoother effect */
     z-index: -1;
     border-radius: 10px;
 }
@@ -1134,7 +1154,7 @@ footer {
     padding: 50px 0px;
     background-color: #312061;
     background-image: linear-gradient(to right, #120d20, #000000 40%, #0f0814);
-
+ font-family: "Barlow",sans-serif ;
 }
 
 footer .wrapper {
@@ -1497,6 +1517,9 @@ footer .bottom-bar ul a {
 }
 
 
+.service-card:hover {
+    box-shadow: 0 0 10px 5px hsla(0, 0%, 47%, 0.2);
+}
 .service-card {
     width: 31%;
     text-align: center;
@@ -1507,13 +1530,20 @@ footer .bottom-bar ul a {
     box-shadow: 0px 0px 20px 0px rgb(204 204 204 / 27%);
     padding: 40px 50px 50px 50px;
     cursor: pointer;
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
 }
 
+.service-card img {
+    transform: translateZ(20px);
+
+}
 .service-card b {
     color: #fff;
     font-size: 24px;
     margin-bottom: 20px;
     display: block;
+    transform: translateZ(20px);
 }
 
 
@@ -1523,18 +1553,21 @@ footer .bottom-bar ul a {
     margin: 40px 0;
     color: #fff;
     text-transform: capitalize;
+    transform: translateZ(20px);
 }
 
 .service-card p {
     text-align: center;
     margin-top: 0;
     color: #fff;
+    transform: translateZ(20px);
 }
 
 
 
 .service-card h2 {
     font-size: 28px;
+    transform: translateZ(20px);
 }
 
 

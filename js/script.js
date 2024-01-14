@@ -1,7 +1,33 @@
 AOS.init();
 var acc = document.getElementsByClassName("accordion-header");
 var i;
+const $cursor = document.querySelector('.cursor__circle');
+const $hover = document.querySelectorAll('.main-heading');
 
+
+$hover[0].addEventListener('mousemove', onMouseMove);
+for (let i = 0; i < $hover.length; i++) { $hover[i].addEventListener('mouseenter', onMouseHover); $hover[i].addEventListener('mouseleave', onMouseHoverOut);
+}
+
+
+function onMouseMove(e) {
+  TweenMax.to($cursor, .4, {
+    x: e.pageX - 16,
+    y: e.pageY - 16
+  })
+}
+
+
+function onMouseHover() {
+  TweenMax.to($cursor, .4, {
+    scale: 4
+  })
+}
+function onMouseHoverOut() {
+  TweenMax.to($cursor, .4, {
+    scale: 0
+  })
+}
 
 const moreAccordion=document.querySelector(".more-accordion");
 const accordionHidden=document.querySelector(".accordion-hidden")
