@@ -902,6 +902,7 @@ align-items: center;
     background-color: #0c0c0c;
     padding-bottom: 1px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .port-card h2 {
@@ -960,24 +961,54 @@ align-items: center;
 
 
 .client-card {
-    /* width: 32%; */
+    background-color: #161616;
+    border-radius: 10px;
+    padding: 40px;
+    position: relative;
+    /* overflow: hidden; */
+
     background-color: #161616;
     border-radius: 10px;
     padding: 40px 40px 50px 40px;
     position: relative;
-    background: linear-gradient(#161616, #161616) padding-box,
-        linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%) border-box;
     border-radius: 10px;
     border: 1px solid transparent;
-
+  cursor: pointer;
 
 }
 
+.bg-grad-animation::before,
+.bg-grad-animation::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%);
+    transition: width 0.7s ease; /* Transition only the width property for a smoother effect */
+    z-index: -1;
+    border-radius: 10px;
+}
 
-.client-card:hover {
+.bg-grad-animation::before {
+    left: 0;
+}
+
+.bg-grad-animation::after {
+    right: 0;
+}
+
+.bg-grad-animation:hover::before {
+    width: 100%;
+}
+
+.bg-grad-animation:hover::after {
+    width: 100%;
+}
+/* .client-card:hover {
     background-image: linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%);
 
-}
+} */
 
 .client-card p {
     font-size: 16px;
@@ -1035,6 +1066,15 @@ align-items: center;
     margin-inline: auto;
 
 }
+.accordion .content{
+    border-width: 0;
+    margin-bottom: 0;
+}
+.accordion:hover .content{
+max-height: 400px;
+margin-bottom: 20px;
+border-width: 2px;
+}
 .accordion-more-btn img{
     cursor: pointer;
 }
@@ -1087,6 +1127,7 @@ align-items: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 }
 
 footer {
@@ -1465,6 +1506,7 @@ footer .bottom-bar ul a {
     border: 1px solid transparent;
     box-shadow: 0px 0px 20px 0px rgb(204 204 204 / 27%);
     padding: 40px 50px 50px 50px;
+    cursor: pointer;
 }
 
 .service-card b {
@@ -1474,9 +1516,6 @@ footer .bottom-bar ul a {
     display: block;
 }
 
-.service-card:hover {
-    background-image: linear-gradient(to bottom right, #bb2ec0 20%, #07adee 90%);
-}
 
 .service-card h2 {
     font-size: 20px;
@@ -1587,6 +1626,7 @@ footer .bottom-bar ul a {
     border-radius: 10px;
     padding: 35px 20px 20px 20px;
     align-self: baseline;
+    
 }
 
 .pricing-wrapper .pricing-card img {
