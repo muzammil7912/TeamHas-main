@@ -5,10 +5,11 @@ const $cursor = document.querySelector('.cursor__circle');
 const $hover = document.querySelectorAll('.main-heading');
 
 
-$hover[0].addEventListener('mousemove', onMouseMove);
+if($hover.length){
+  $hover[0].addEventListener('mousemove', onMouseMove);
 for (let i = 0; i < $hover.length; i++) { $hover[i].addEventListener('mouseenter', onMouseHover); $hover[i].addEventListener('mouseleave', onMouseHoverOut);
 }
-
+}
 
 function onMouseMove(e) {
   TweenMax.to($cursor, .4, {
