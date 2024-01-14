@@ -75,7 +75,7 @@ $(this).prop('disabled', true);
             }
           }).showToast();
         // setTimeout(() => {
-        // location.reload();
+        location.reload();
         // }, 1999); 
         $("#sendconact").trigger('reset');
         $(this).closest('form').find("input[type=text], textarea, input[type=email], select").val("");

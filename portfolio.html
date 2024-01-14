@@ -51,12 +51,12 @@
               <li><a href="pricing.html">Pricing</a></li>
               <li>
                 <a href="about.html"
-                  >About us
+                  >About
                   <i class="fa-solid fa-angle-down"></i>
                 </a>
                 <div class="drop-down">
                   <ul class="drop-content">
-                   <li><a href="about.html">About</a></li>
+                   <li><a href="about.html">About Us</a></li>
                     <li><a href="career.html">Career</a></li>
                     <li><a href="contact.html">Contact us</a></li>
                     <a href="" id="" class="btn btn-primary myBtn"><span>Book a Call</span></a>
@@ -184,25 +184,25 @@
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>Get ready for your demo with a couple quick questions.</h2>
-        <form action="">
+        <form action="" id="sendconact">
           <div class="form-group">
-            <input class="form-control" type="text" placeholder="Name" />
-            <input class="form-control" type="text" placeholder="Email" />
+            <input class="form-control" name="fname" type="text" placeholder="First Name" />
+            <input class="form-control" name="lname" type="text" placeholder="Last Name" />
           </div>
           <div class="form-group">
-            <input class="form-control" type="text" placeholder="Phone" />
-            <input class="form-control" type="text" placeholder="Subject" />
+            <input class="form-control" name="email" type="email" placeholder="Email Address" />
+            <input class="form-control" name="phonenumber" type="tel" placeholder="Phone Number" />
           </div>
-          <input class="form-control" type="text" placeholder="Phone" />
+          <input class="form-control"  type="text" name="business" placeholder="Business" />
           <textarea
-            placeholder="Cover letter"
+            placeholder="Message"
             class="form-control"
-            name=""
+            name="message"
             id=""
             cols="30"
             rows="5"
           ></textarea>
-          <button class="btn btn-primary">Submit</button>
+          <button class="btn btn-primary" id="submit-form">Submit</button>
         </form>
       </div>
     </div>
@@ -261,19 +261,20 @@
               </ul>
             </div>
             <div class="ser" data-aos="fade-up">
-              <ul>
-                <li><a href="/html/service.html">Services</a></li>
+               <ul>
+                <li><a href="service.html">Services</a></li>
                 <li>
-                  <a href="#">Design</a>
+                  <a href="service.html">Ad Creatives</a>
                 </li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Design</a></li>
+                <li><a href="service.html">Info Graphics</a></li>
+                <li><a href="service.html">Ui/Ux design</a></li>
+                <li><a href="service.html">Merch Design</a></li>
+                <li><a href="#" class="btn btn-primary myBtn"><span>View All</span></a></li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="bottom-bar" data-aos-duration="1000" data-aos="fade-right">
+        <div class="bottom-bar">
           <p>All rights reserved.All prices are in USD</p>
           <ul>
             <li><a href="/html/service.html">terms</a></li>
@@ -289,5 +290,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="js/script.js"></script>
+    <script src="js/indexgetAGeote.js"></script>
   </body>
 </html>

@@ -4,13 +4,12 @@
            if (filter_var($_POST['email'],FILTER_SANITIZE_EMAIL)) {
          
          
-        $name = $_REQUEST['name'];
+        $fname = $_REQUEST['fname'];
+        $lname = $_REQUEST['lname'];
         $email = $_REQUEST['email'];
+        $phonenumber = $_REQUEST['phonenumber'];
+        $business = $_REQUEST['business'];
         $message = $_REQUEST['message'];
-      
-                $services = $_REQUEST['services'];
-                        $phonenumber = $_REQUEST['phonenumber'];
-                                $cellnumber = $_REQUEST['cellnumber'];
                                 
                                 
 $msg='<table border="1">';
@@ -31,7 +30,7 @@ $msg.='</table>';
             
             
       // Set your email address where you want to receive emails. 
-       $to = 'info@fastbuddys.com';
+       $to = 'info@teamhas.net';
        $subject = 'Home Get_A_Quote Form';
           
        $headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -56,9 +55,9 @@ $msg.='</table>';
 
  // user email sending code. 
        $to = $email;
-       $names = "Admin Fast Buddys";
+       $names = "Admin team has";
 
-        $emails = 'info@fastbuddys.com';
+        $emails = 'info@teamhas.net';
 
 
 
