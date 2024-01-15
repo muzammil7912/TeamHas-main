@@ -1,4 +1,4 @@
-AOS.init();
+// AOS.init();
 var acc = document.getElementsByClassName("accordion-header");
 var i;
 const $cursor = document.querySelector('.cursor__circle');
