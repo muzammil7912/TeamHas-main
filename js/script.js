@@ -1,33 +1,39 @@
 // AOS.init();
 var acc = document.getElementsByClassName("accordion-header");
 var i;
-const $cursor = document.querySelector('.cursor__circle');
-const $hover = document.querySelectorAll('.main-heading');
+const $cursor = document.querySelector(".ddfsasdsdaiv");
+const $hover = document.querySelectorAll(".main-heading span");
 
-
-if($hover.length){
-  $hover[0].addEventListener('mousemove', onMouseMove);
-for (let i = 0; i < $hover.length; i++) { $hover[i].addEventListener('mouseenter', onMouseHover); $hover[i].addEventListener('mouseleave', onMouseHoverOut);
-}
+if ($hover.length) {
+  document.body.addEventListener("mousemove", onMouseMove);
+  for (let i = 0; i < $hover.length; i++) {
+    $hover[i].addEventListener("mouseenter", onMouseHover);
+    $hover[i].addEventListener("mouseleave", onMouseHoverOut);
+  }
 }
 
 function onMouseMove(e) {
-  TweenMax.to($cursor, .4, {
-    x: e.pageX - 16,
-    y: e.pageY - 16
-  })
+  TweenMax.to($cursor, 0.4, {
+    "--x": `${e.pageX - 316}px`,
+    "--y":  `${e.pageY - 316}px`,
+  });
 }
 
-
-function onMouseHover() {
-  TweenMax.to($cursor, .4, {
-    scale: 4
-  })
+function onMouseHover(e) {
+  TweenMax.to($cursor, 0.4, {
+    "--x": `${e.pageX - 316}px`,
+    "--y":  `${e.pageY - 316}px`,
+    "--size": "200px",
+    "--sizesd": "200px",
+  });
 }
-function onMouseHoverOut() {
-  TweenMax.to($cursor, .4, {
-    scale: 0
-  })
+
+function onMouseHoverOut(e) {
+  TweenMax.to($cursor, 0.4, {
+    "--x": `${e.pageX - 316}px`,
+    "--y":  `${e.pageY - 316}px`,
+    "--size": "31px",
+  });
 }
 
 const moreAccordion=document.querySelector(".more-accordion");

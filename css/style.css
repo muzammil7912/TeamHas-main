@@ -207,10 +207,14 @@ h2 {
 
 .heading-outline {
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: hsla(0, 0%, 100%, 0.600);
+    -webkit-text-stroke-color: hsla(0, 0%, 100%, 0.6);
     color: transparent;
 }
 
+.ddfsasdsdaiv .main-heading .heading-outline{
+    -webkit-text-stroke-color: hsla(0, 0%, 0%, 0.6);
+    /* color: #000000; */
+}
 .heading-gradient {
     background: linear-gradient(to bottom right, #FC00FF 15.29%, #12aad8 95.88%),
         linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
@@ -218,6 +222,15 @@ h2 {
     -webkit-text-fill-color: transparent;
 
 }
+
+.gradient-text {
+    color: #fff; /* Set the text color */
+    -webkit-background-clip: text;
+    background-clip: text;
+    display: inline-block;
+    position: relative;
+  }
+  
 
 
 
@@ -531,21 +544,31 @@ align-items: center;
 
 
 
-.cursor {
-    pointer-events: none;
-}
 
-.cursor__circle {
-    position: fixed;
-    top: 0;
+.ddfsasdsdaiv {
+    width: 100%;
+    padding: 100px 0;
+    --size: 31px;
+    background: #ffffff;
     left: 0;
-    mix-blend-mode: difference;
-    z-index: 1000;
+    -webkit-mask-image: url(../imgs/circle.svg);
+    mask-image: url(../imgs/circle.svg);
+    -webkit-mask-origin: content-box;
+    mask-origin: content-box;
+    -webkit-mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2),center;
+    mask-position: calc(var(--x) - var(--size)/2) calc(var(--y) - var(--size)/2),center;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: var(--size),contain;
+    mask-size: var(--size),contain;
+    min-height: 100%;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    z-index: 5
 }
 
-.cursor__circle circle {
-    fill:white ;
-}
+
 
 
 
@@ -563,6 +586,7 @@ align-items: center;
 
 .banner .main-heading-container {
     position: relative;
+    padding: 100px 0;
 }
 
 .banner .heading-ellipse {
@@ -624,7 +648,43 @@ align-items: center;
 
 /* brands */
 
-
+.marquee-container {
+    height: 60px;
+    overflow: hidden;
+    line-height: 30px;
+  position: relative;
+  
+    .marquee {
+      top: 0;
+      left: 100%;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      animation: marquee 30s linear infinite;
+      display: flex;
+      justify-content: space-around;
+      
+    }
+  
+    .marquee2 {
+        display: flex;
+        justify-content: space-around;
+      animation-delay: 15s;
+    }
+    b {
+      padding-left: 10px;
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -100%
+    }
+  }
 .brands {
     background-color: #0c0c0c;
     padding: 20px 0;
@@ -1137,7 +1197,7 @@ border-width: 2px;
 .accordion .content {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-out;
+    transition: max-height 0.7s ease-out;
     border-width: 0;
 }
 
