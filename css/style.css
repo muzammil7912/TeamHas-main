@@ -653,11 +653,13 @@ align-items: center;
     overflow: hidden;
     line-height: 30px;
   position: relative;
+  margin-top: 30px;
   
     .marquee {
       top: 0;
       left: 100%;
-      width: 100%;
+      width: auto;
+      gap: 60px;
       overflow: hidden;
       position: absolute;
       white-space: nowrap;
@@ -670,10 +672,27 @@ align-items: center;
     .marquee2 {
         display: flex;
         justify-content: space-around;
-      animation-delay: 15s;
+      animation-delay: 14s;
     }
     b {
       padding-left: 10px;
+    }
+    img{
+        height: 50px;
+        filter: grayscale(1);
+
+    }
+  }
+  .marquee-container.two{
+    margin-top: 20px;
+
+    .marquee{
+        animation: marquee2 70s linear infinite;
+    }
+    .marquee2 {
+        display: flex;
+        justify-content: space-around;
+      animation-delay: 32s;
     }
   }
   
@@ -683,6 +702,14 @@ align-items: center;
     }
     100% {
       left: -100%
+    }
+  }
+  @keyframes marquee2 {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%
     }
   }
 .brands {
@@ -959,7 +986,7 @@ align-items: center;
 }
 
 .our-portfolio .card-wrapper {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -968,21 +995,35 @@ align-items: center;
 }
 
 .port-card:hover {
-
+   
     border: 1px solid;
     border-image-slice: 1;
     border-width: 1px;
     border-image-source: linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%);
     border-radius: 8px;
+   transition: 3s  ease-in-out;
+    img{
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+    }
+    .port-card-overlay{
+    height: 100%;
+a{
+    display: block;
+}
+    }
 }
 
 .port-card {
     border: 1px solid transparent;
-    width: 48.5%;
+    width: 31.5%;
     background-color: #0c0c0c;
     padding-bottom: 1px;
     border-radius: 8px;
     cursor: pointer;
+   overflow: hidden;
+   position: relative;
+
 }
 
 .port-card h2 {
@@ -993,9 +1034,32 @@ align-items: center;
     color: white;
 }
 
+.port-card .port-card-overlay {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height:0;
+    background-color: #92929241;
+    /* opacity: 0.4; */
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    transform:translateY() ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        display: none;
+        text-decoration: none;
+    }
+    
+}
 .port-card img {
     width: 95%;
     padding-top: 10px;
+    -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 
