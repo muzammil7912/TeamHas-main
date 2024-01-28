@@ -148,35 +148,35 @@ var swiper3 = new Swiper(".client-slider", {
     clickable: true,
   },
 });
-var swiper3 = new Swiper(".team-slider", {
-  autoplay: {
-    delay: 1500,
-  },
-  centeredSlides: true,
-  roundLengths: true,
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-    },
-    480: {
-      slidesPerView: 2,
-    },
-    560: {
-      slidesPerView: 3,
-    },
-    // when window width is >= 480px
-    1040: {
-      slidesPerView: 5,
-    },
-    // when window width is >= 640px
-  },
-  loop: true,
-  navigation: {
-    nextEl: ".team-slider-next",
-    prevEl: ".team-slider-prev",
-  },
-});
+// var swiper3 = new Swiper(".team-slider", {
+//   autoplay: {
+//     delay: 1500,
+//   },
+//   centeredSlides: true,
+//   roundLengths: true,
+//   breakpoints: {
+//     // when window width is >= 320px
+//     320: {
+//       slidesPerView: 1,
+//     },
+//     480: {
+//       slidesPerView: 2,
+//     },
+//     560: {
+//       slidesPerView: 3,
+//     },
+//     // when window width is >= 480px
+//     1040: {
+//       slidesPerView: 5,
+//     },
+//     // when window width is >= 640px
+//   },
+//   loop: true,
+//   navigation: {
+//     nextEl: ".team-slider-next",
+//     prevEl: ".team-slider-prev",
+//   },
+// });
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
