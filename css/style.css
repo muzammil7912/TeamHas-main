@@ -43,7 +43,9 @@ main {
     width: 100%;
 
 }
-
+a{
+    text-decoration: none;
+}
 .container {
     max-width: 1200px;
     width: 90%;
@@ -583,8 +585,19 @@ align-items: center;
 }
 
 
+.service-detail .banner .main-heading-container h2{
+    width: max-content;
+    font-size: 55px;
+    text-transform: uppercase;
+}
+.service-detail .banner .main-heading-container {
+    width: min-content;
+    margin: 0 auto;
+    text-align: center;
 
+}
 .banner .main-heading-container {
+
     position: relative;
     padding: 100px 0;
 }
@@ -1639,13 +1652,16 @@ footer .bottom-bar ul a {
 
 
 }
-
+.services-wrapper>a{
+    width: 31%;
+}
 
 .service-card:hover {
     box-shadow: 0 0 10px 5px hsla(0, 0%, 47%, 0.2);
 }
 .service-card {
-    width: 31%;
+    /* width: 31%; */
+    height: 100%;
     text-align: center;
     background: linear-gradient(#161616, #161616) padding-box,
         linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%) border-box;
@@ -2708,4 +2724,89 @@ footer .bottom-bar ul a {
     .modal-content {
         width: 100%;
     }
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 40px;
+
+}
+.input-container>:nth-child(1){
+flex: 0.5;
+}
+.input-container .form-control{
+    margin: 0;
+    border-radius: 5px;
+   padding: 21px  !important;
+    
+}
+.input-container button{
+   padding: 20px 34px;
+}
+button{
+    cursor: pointer;
+}
+
+.service-detail .box-container .left{
+    width: 50%;
+}
+.service-detail .box-container .right{
+    width: 45%;
+
+    h2{
+       margin-top: 0; 
+    }
+}
+.service-detail .remote-company{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+
+    .right{
+        width: 40%;
+    }
+    .left{
+        width: 50%;
+    }
+}
+
+.service-detail .service-inner-sec-4 {
+   
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.service-detail .statics-wrapper {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p{
+        font-size: 16px;
+    }
+    h3{
+        margin: 5px 0;
+        font-size: 22px;
+
+    }
+
+}
+.service-detail  .statics {
+    width: 20%;
+    border-bottom: 2px solid #FC00FF;
+    height: 210px;
+}
+
+.service-inner-sec-5{
+    padding-bottom: 120px ;
 }
