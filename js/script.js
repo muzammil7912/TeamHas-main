@@ -177,6 +177,25 @@ var swiper3 = new Swiper(".client-slider", {
 //     prevEl: ".team-slider-prev",
 //   },
 // });
+
+var swiper = new Swiper(".career-swiper", {
+  loop: true,
+  spaceBetween: 30,
+  pagination: {
+    el: ".career-swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+        delay: 1500,
+      },
+      centeredSlides: true,
+      roundLengths: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
 var modal = document.getElementById("myModal");
 
 // Get the button that opens the modal

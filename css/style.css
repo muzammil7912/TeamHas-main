@@ -2918,3 +2918,40 @@ button{
     
     
 }
+.career-swiper{
+    margin-top: 50px;
+}
+.career-swiper-card{
+    display: flex;
+    justify-content: center;
+    padding: 0 12%;
+    
+}
+.career-swiper-card .card-image img{
+    width: 90%;
+
+    border-radius: 10px;
+}
+.career-swiper-card .card-image{
+    flex: 2.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.career-swiper-card .card-text{
+    flex: 3;
+    padding: 30px;
+    padding-bottom: 0;
+    /* padding-right: 40px; */
+}
+.career-swiper-card .card-text .title{
+
+    p{
+        margin: 4px 0;
+      font-size: 14px;
+    }
+    h3{
+        margin: 4px 0;
+        
+    }
+}
