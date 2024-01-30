@@ -160,7 +160,7 @@ a{
 p {
     font-weight: 200;
     font-size: 24px;
-    color: hsla(0, 100%, 99%, 0.699);
+    color: white;
 }
 
 /* heading */
@@ -172,8 +172,8 @@ h4,
 h5,
 h6 {
     font-weight: 700;
-    color: hsla(0, 0%, 100%, 0.600);
-    font-family: "Barlow",sans-serif ;
+    color: white;
+    font-family: 'Raleway',sans-serif ;
 
 
 }
@@ -368,6 +368,12 @@ align-items: center;
 }
 
 /* banner */
+.banner.home{
+    background-image: url(../imgs/illustration\ for\ banner-01.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .banner {
     height: calc(100vh - 97px);
     display: flex;
@@ -1026,15 +1032,16 @@ align-items: center;
     border: 1px solid;
     border-image-slice: 1;
     border-width: 1px;
-    border-image-source: linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%);
+    /* border-image-source: linear-gradient(140.77deg, #FC00FF 15.29%, #00DBDE 95.88%); */
     border-radius: 8px;
-   transition: 3s  ease-in-out;
+   /* transition: 3s  ; */
     img{
         -webkit-transform: scale(1.3);
         transform: scale(1.3);
     }
     .port-card-overlay{
     height: 100%;
+   opacity: 0.9;
 a{
     display: block;
 }
@@ -1045,7 +1052,7 @@ a{
     border: 1px solid transparent;
     width: 31.5%;
     background-color: #0c0c0c;
-    padding-bottom: 1px;
+    /* padding-bottom: 1px; */
     border-radius: 8px;
     cursor: pointer;
    overflow: hidden;
@@ -1068,13 +1075,11 @@ a{
     width: 100%;
     height:0;
     background-color: #92929241;
-    /* opacity: 0.4; */
-    -webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    transform:translateY() ;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out; 
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 
     a{
         display: none;
@@ -1083,8 +1088,7 @@ a{
     
 }
 .port-card img {
-    width: 95%;
-    padding-top: 10px;
+    width: 100%;
     -webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
@@ -1218,7 +1222,7 @@ a{
 
 
 .faqs {
-    padding: 50px 0px;
+    padding: 50px 0px 200px;
 
 }
 
@@ -1302,14 +1306,32 @@ border-width: 2px;
 }
 
 footer {
-    padding: 50px 0px;
+    padding: 200px 0px 50px;
     background-color: #312061;
     background-image: linear-gradient(to right, #120d20, #000000 40%, #0f0814);
  font-family: "Barlow",sans-serif ;
 }
-
+footer .container{
+    position: relative;
+}
+footer  .f-popup{
+    position: absolute;
+    /* height: 240px; */
+    padding: 50px 52px;
+    width: 100%;
+    top: -105%;
+    border-radius: 10px;
+    background-color: #312061;
+    background-image:url(../imgs/ilustrationnn-01-01.png), linear-gradient(0deg, #000000 25%, #19091e) ;    background-size: cover;
+        background-repeat: no-repeat;
+    background-position: right;
+    background-color: #312061;
+    /* background-image: linear-gradient(to right, #120d20, #000000 40%, #0f0814); */
+    background-size: contain;
+}
 footer .wrapper {
     display: flex;
+    justify-content: center;
 
 }
 
@@ -1567,7 +1589,12 @@ footer .bottom-bar ul a {
         flex-wrap: wrap;
         gap: 30px;
     }
-
+    .super_our_work{
+    img{ width: 280px !important;}
+    .port-card {
+       width: 280px;
+    }
+    }
 
 
     .port-card {
@@ -1601,6 +1628,11 @@ footer .bottom-bar ul a {
     footer .wrapper {
         flex-direction: column;
         gap: 50px;
+    }
+    footer .f-popup {
+      
+        padding: 35px 52px;
+        top: -55%;
     }
 
     .bottom-bar {
@@ -1646,6 +1678,12 @@ footer .bottom-bar ul a {
 
     .faqs {
         padding: 30px 0;
+    }
+
+    footer .f-popup {
+       
+        padding: 15px 52px;
+        top: -25%;
     }
 }
 
@@ -1737,8 +1775,11 @@ footer .bottom-bar ul a {
     }
 
     .service-card {
-        width: 40%;
+        /* width: 40%; */
         padding: 30px 40px 20px 40px;
+    }
+    .services-wrapper>a{
+        width: 40%;
     }
 
 }
@@ -1759,12 +1800,15 @@ footer .bottom-bar ul a {
 
 @media screen and (max-width: 640px) {
     .service-card {
-        width: 90%;
+        /* width: 90%; */
         padding: 30px 40px 40px 40px;
     }
 
     .services-wrapper {
         padding: 20px 0 40px 0;
+    }
+    .services-wrapper>a{
+        width: 90%;
     }
 
 
@@ -2011,6 +2055,9 @@ footer .bottom-bar ul a {
 
     .pricing-wrapper .pricing-card:nth-child(2) h3 {
         font-size: 20px;
+    }
+    .home-sec-3  .statics-wrapper{
+        justify-content: center !important;
     }
 }
 
@@ -2524,11 +2571,33 @@ footer .bottom-bar ul a {
     margin-bottom: 20px;
 }
 
-.form-control::placeholder {
+.form-control::placeholder{
     color: #ffffff8c;
     font-size: 22px;
 }
+.form-control>option{
+    color: #050505d7;
+    font-size: 22px;
+}
+.form-control input[type="file"]{
+    position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+.form-control>label{
+    color: #ffffff8c;
 
+}
+.form-control.career{
+    position: relative;
+}
 .form-group {
     display: flex;
     gap: 20px;
@@ -2835,6 +2904,7 @@ button{
     padding: 60px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     /* align-items: center;   */
     text-align: left;
     gap: 20px;
@@ -2843,7 +2913,7 @@ button{
         max-width: 340px;
     }
     h3{
-        font-size: 32px;
+        font-size: 26px;
         margin-bottom:10px;
     }
     p{
@@ -2853,6 +2923,7 @@ button{
     }
     .statics{
     width: 100%;
+    max-width: 340px;
     
     display: flex;
     flex-direction: column;
@@ -2860,15 +2931,50 @@ button{
     /* align-items: center; */
     cursor: pointer;
     }
-    .statics:hover{
-       
+    .image{
+       height: 300px;
+       display: flex;
+       align-items: end;
     }
 }
 
 
+.our-portfolio .super-container{
+    -webkit-mask-image:-webkit-linear-gradient(0deg,transparent,#000 15%,#000 85%,transparent);
+}
+
+.swiper-wrapper{
+    transition-timing-function:linear !important ;
+}
+.super_our_work{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation-direction: normal !important;
+    animation-duration: 30000ms !important; */
+    gap: 40px;
+    margin-top: 60px;
+   
+    img{
+        filter: grayscale(1);
+        width: 350px;
 
 
+    }
+    .port-card{
+        overflow: visible;
+        width: 350px;
+    
+    }
+    .port-card:hover{
+       
+        img{
+            -webkit-transform: scale(1);
+            transform: scale(1);
+        }
+    }
 
+}
 
 .super{
     display: flex;
@@ -2890,7 +2996,7 @@ button{
     justify-content: center;
     align-items: center;
     animation-direction: reverse !important;
-    animation-duration: 60000ms !important;
+    animation-duration: 30000ms !important;
     gap: 40px;
     margin-top: 40px;
    

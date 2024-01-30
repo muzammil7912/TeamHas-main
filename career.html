@@ -154,7 +154,7 @@
               creativity and innovation flourish. Join us, and become part of a
               dynamic team that's reshaping the landscape of digital design.
             </p>
-            <a href="" class="btn btn-primary myBtn"><span>Join us</span></a>
+            <a href="" class="btn btn-primary myBtnCareer"><span>Join us</span></a>
           </div>
           <div class="statics-wrapper">
             <div class="statics" data-aos-duration="200" data-aos="fade-up">
@@ -569,7 +569,7 @@
                   exceptional talent. Drop us your portfolio and let us know how
                   you can make a difference at TeamHAS Visionz.
                 </p>
-                <a href="" class="btn btn-primary myBtn"
+                <a href="" class="btn btn-primary myBtnCareer"
                   ><span>Apply now</span></a
                 >
               </div>
@@ -588,41 +588,92 @@
         <h2>Get ready for your demo with a couple quick questions.</h2>
         <form action="" id="sendconact">
           <div class="form-group">
+            <input class="form-control" name="fname" type="text" placeholder="First Name" />
+            <input class="form-control" name="lname" type="text" placeholder="Last Name" />
+          </div>
+          <div class="form-group">
+            <input class="form-control" name="email" type="email" placeholder="Email Address" />
+            <input class="form-control" name="phonenumber" type="tel" placeholder="Phone Number" />
+          </div>
+          <div class="form-group">
+            <input class="form-control"  type="text" name="business" placeholder="Business Name" />
+             <select class="form-control" name="" id="" >
+              <option hidden>Business Size</option>
+             <option>1-10</option>
+             <option>11-50</option>
+             <option>51-200</option>
+             <option>201-500</option>
+             <option>501-1000</option>
+             <option>1001-5000</option>
+             <option>5000+</option>
+             </select>
+          </div>
+          <textarea
+            placeholder="Message"
+            class="form-control"
+            name="message"
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button class="btn btn-primary" id="submit-form">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div id="myModalCareer" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Apply Now</h2>
+        <form action="" id="sendconact">
+          <div class="form-group">
             <input
               class="form-control"
-              name="fname"
+              name="fullname"
               type="text"
-              placeholder="First Name"
+              placeholder="Full Name"
             />
             <input
               class="form-control"
-              name="lname"
-              type="text"
-              placeholder="Last Name"
+              name="email"
+              type="email"
+              placeholder="Email"
             />
           </div>
           <div class="form-group">
             <input
               class="form-control"
-              name="email"
-              type="email"
-              placeholder="Email Address"
+              name="phone"
+              type="tel"
+              placeholder="Phone"
             />
             <input
               class="form-control"
-              name="phonenumber"
-              type="tel"
-              placeholder="Phone Number"
+              name="curcompany"
+              type="text"
+              placeholder="Current Company"
             />
           </div>
-          <input
-            class="form-control"
-            type="text"
-            name="business"
-            placeholder="Business"
-          />
+          <div class="form-group">
+            <input
+              class="form-control"
+              name="linkdin"
+              type="url"
+              placeholder="LinkdIn Profile"
+            />
+            <span  class="form-control career">
+              <label for="cv"> CV/Resume</label>
+              <input
+             
+              name="cv"
+              type="file"
+              placeholder="CV/Resume"
+            /></span>
+          </div>
+        
+         
           <textarea
-            placeholder="Message"
+            placeholder="Cover Letter"
             class="form-control"
             name="message"
             id=""
