@@ -329,6 +329,12 @@ header .container {
     visibility: visible;
     top: 0;
 }
+.nav-list li:hover .drop-down .drop-large {
+    /* display: block; */
+    z-index: 2;
+    visibility: visible;
+    top: 0;
+}
 
 .drop-content {
     margin: 0;
@@ -345,7 +351,45 @@ header .container {
     color: #fff;
     transition: all 0.3s ease-in;
 }
+.drop-large{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* display: none; */
+    position: absolute;
+    visibility: hidden;
+    background-color: #333333;
+    min-width: 180px;
+    /* text-align: center; */
+    top: 2rem;
+    left: -300px;
+    color: #fff;
+    transition: all 0.3s ease-in;
+    display: flex;
+    padding: 20px;
+    border-radius: 10px;
 
+}
+.drop-large ul{
+    list-style: none;
+    padding-left: 0;
+}
+.drop-large ul li a{
+    /* padding: 10px 0; */
+    display: inline-block;
+    font-size: 16px;
+    min-width:200px;
+    /* margin-left: 10px; */
+
+    p{
+        font-size: 14px;
+        margin: 4px 0;
+    }
+}
+
+.drop-list{
+    display: flex;
+}
 .drop-content li a {
     padding: 10px 0;
     display: inline-block;
@@ -1682,8 +1726,8 @@ footer .bottom-bar ul a {
 
     footer .f-popup {
        
-        padding: 15px 52px;
-        top: -25%;
+        padding: 20px 52px;
+        top: -42%;
     }
 }
 
@@ -2620,6 +2664,12 @@ footer .bottom-bar ul a {
     .contact-page .contact-form .right {
         width: 100%;
     }
+    .form-page .right{
+     justify-content: center !important;
+    }
+    .form-page .left{
+        text-align: center;
+    }
 }
 
 @media screen and (max-width:640px) {
@@ -3060,4 +3110,52 @@ button{
         margin: 4px 0;
         
     }
+}
+
+.pb-200{
+    padding-bottom: 200px;
+}
+
+.form-page {
+    background-image: url(../imgs/book\ a\ call\ form\ illustration-02.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* margin-top: 100px; */
+    
+
+}
+.form-page .contact-form{
+    padding: 40px 0 90px;
+}
+
+.form-page .contact-form .right {
+    width: auto;
+   flex: 1; 
+   display: flex;
+   justify-content: flex-end;
+   #sendconact{
+    width:320px ;
+   }
+   p{
+    margin: 0 0 4px 6px;
+    font-size: 20px;
+   }
+   ::placeholder{
+    color: white;
+    font-size: medium;
+   }
+   button{
+    width: 100%;
+   }
+}
+.form-page .contact-form .left {
+    width: auto;
+   flex: 2;
+    h3{
+        font-size: 48px;
+    }
+}
+.form-page-footer{
+    padding-top:60px ;
 }

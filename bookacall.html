@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    <title>Team Has</title>
+  </head>
+
+  <body>
+    <div id="gradient-bg">
+      <header>
+        <div class="container">
+          <div class="logo">
+            <a href="index.html"><img src="imgs/logo.png" alt="" /></a>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <li class="active"><a href="index.html">Home</a></li>
+              <li>
+                <a href="service.html"
+                  >Services
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                     <li><a href="services/infographics.html">Infographics</a></li>
+                    <li><a href="services/brandidentity.html">Brand Identity</a></li>
+                    <li><a href="services/merchdesign.html">Merch Design</a></li>
+                    <li><a href="services/animation.html">Animations</a></li>
+              <a href="service.html" id="" class="btn btn-primary"><span>View All</span></a>
+
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="portfolio.html"
+                  >Our Work
+                </a>
+               
+              </li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li>
+                <a href="about.html"
+                  >About
+                  <i class="fa-solid fa-angle-down"></i>
+                </a>
+                <div class="drop-down">
+                  <ul class="drop-content">
+                   <li><a href="about.html">About Us</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <a href="" id="" class="btn btn-primary myBtn"><span>Book a Call</span></a>
+
+                  </ul>
+                </div>
+              </li>
+              <a href="" class="btn btn-primary myBtn"><span>Talk to us</span></a>
+            </ul>
+          </nav>
+          <nav role="navigation" class="mobile-nav">
+            <div id="menuToggle">
+              <!--
+                A fake / hidden checkbox is used as click reciever,
+                so you can use the :checked selector on it.
+                -->
+              <input type="checkbox" />
+
+              <!--
+                Some spans to act as a hamburger.
+        
+                They are acting like a real hamburger,
+                not that McDonalds stuff.
+                -->
+              <span></span>
+              <span></span>
+              <span></span>
+
+              <!--
+                Too bad the menu has to be inside of the button
+                but hey, it's pure CSS magic.
+                -->
+              <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="service.html">Services</a></li> -->
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="service.html">Service</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Service-1</a></li>
+                      <li><a href="#">Service-2</a></li>
+                      <li><a href="#">Service-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="portfolio.html">Our Work</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">Our Work-1</a></li>
+                      <li><a href="#">Our Work-2</a></li>
+                      <li><a href="#">Our Work-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li class="">
+                  <div tabindex="0" class="onclick-menu">
+                    <div>
+                      <a href="about.html">About Us</a>
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <ul class="onclick-menu-content">
+                      <li><a href="#">About-1</a></li>
+                      <li><a href="#">About-2</a></li>
+                      <li><a href="#">About-3</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <main class="contact-page form-page">
+      
+        <div class="container  ">
+          <div class="contact-form">
+            <div class="left" data-aos="fade-right">
+              <h3>
+               See what TeamHas <br />
+                can do for you
+              </h3>
+              <p>
+               Book a short 20-min demo and discover a new way to get quality <br/>
+               design work done reliably and affordably
+              </p>
+            </div>
+            <div class="right">
+              <form action="" id="sendconact">
+                <p>First Name</p>
+                <input class="form-control" name="fname" type="text" placeholder="Eg . Nelson" />
+                <p>Last Name</p>
+               
+                <input class="form-control" name="lname" type="text" placeholder="Eg . James" />
+               
+                <p>Company Email</p>
+                
+                <input class="form-control" name="email" type="email" placeholder="Eg . nelsonjames@gmail.com" />
+                <p>Company Size</p>
+                <select class="form-control" name="" id="" >
+                    <option hidden>Please Select</option>
+                   <option>1-10</option>
+                   <option>11-50</option>
+                   <option>51-200</option>
+                   <option>201-500</option>
+                   <option>501-1000</option>
+                   <option>1001-5000</option>
+                   <option>5000+</option>
+                   </select>
+                   <p>Phone Number</p>
+                <input class="form-control" name="phonenumber" type="tel" placeholder="Eg . +1 6892 0292" />
+                
+                
+                <button
+                  class="btn btn-primary"
+                  data-aos-duration="200"
+                  data-aos="fade-left"
+                  id="submit-form2"
+                >
+                  <span>Submit</span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Get ready for your demo with a couple quick questions.</h2>
+        <form action="" id="sendconact">
+          <div class="form-group">
+            <input class="form-control" name="fname" type="text" placeholder="First Name" />
+            <input class="form-control" name="lname" type="text" placeholder="Last Name" />
+          </div>
+           <div class="form-group">
+            <input class="form-control" name="email" type="email" placeholder="Email Address" />
+            <input class="form-control" name="phonenumber" type="tel" placeholder="Phone Number" />
+          </div>
+          <div class="form-group">
+            <input class="form-control"  type="text" name="business" placeholder="Business Name" />
+             <select class="form-control" name="" id="" >
+              <option hidden>Business Size</option>
+             <option>1-10</option>
+             <option>11-50</option>
+             <option>51-200</option>
+             <option>201-500</option>
+             <option>501-1000</option>
+             <option>1001-5000</option>
+             <option>5000+</option>
+             </select>
+          </div>
+          <textarea
+            placeholder="Message"
+            class="form-control"
+            name="message"
+            id=""
+            cols="30"
+            rows="5"
+          ></textarea>
+          <button class="btn btn-primary" id="submit-form">Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer class="form-page-footer">
+      <div class="container">
+       
+        <div class="wrapper">
+          <div class="left">
+            <a href="index.html" data-aos="fade-left">
+              <img class="logo"  data-aos-duration="1000" data-aos="fade-down" src="imgs/logo.png" alt=""
+            /></a>
+             
+            <ul data-aos-duration="1000" data-aos="fade-left">
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-envelope"></i> info@TeamHas.com</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><i class="fa-solid fa-comments-dollar"></i> Livechat</a
+                >
+              </li>
+            </ul>
+            <div class="social" data-aos="fade-down">
+              <a class="social-icon" href="#"
+                ><img src="imgs/twitter 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/facebook 1.png" alt=""
+              /></a>
+              <a class="social-icon" href="#"
+                ><img src="imgs/instagram 1.png" alt=""
+              /></a>
+            </div>
+          </div>
+
+          <div class="right">
+            <div class="home" data-aos="fade-up">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li>
+                  <a href="portfolio.html">Our Work</a>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="contact" data-aos="fade-up">
+              <ul>
+                 <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="#" class="myBtn">Book A Call</a></li>
+                <li>
+                  <a href="career.html">careers</a>
+                </li>
+              </ul>
+            </div>
+            <div class="ser" data-aos="fade-up">
+               <ul>
+                <li><a href="service.html">Services</a></li>
+                <li>
+                  <a href="service.html">Ad Creatives</a>
+                </li>
+                <li><a href="service.html">Info Graphics</a></li>
+                <li><a href="service.html">Ui/Ux design</a></li>
+                <li><a href="service.html">Merch Design</a></li>
+                <li><a href="#" class="btn btn-primary "><span>View All</span></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-bar">
+          <p>All rights reserved.All prices are in USD</p>
+          <ul>
+            <li><a href="/html/service.html">terms</a></li>
+            <li>
+              <a href="#">privacy</a>
+            </li>
+            <li><a href="#">about</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
+    <script src="js/script.js?e3rer"></script>
+    <script src="js/indexgetAGeote.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
