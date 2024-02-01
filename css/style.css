@@ -3014,7 +3014,11 @@ button{
     .port-card{
         overflow: visible;
         width: 350px;
+        margin: 0 1rem;
     
+    }
+    .port-card img{ 
+        width: 100%;
     }
     .port-card:hover{
        

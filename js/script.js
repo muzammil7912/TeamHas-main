@@ -148,34 +148,55 @@ var swiper3 = new Swiper(".client-slider", {
     clickable: true,
   },
 });
-var swiper3 = new Swiper(".our-work-home-slider", {
-  speed:10000,
-autoplay: {
-    delay: 0,
-    disableOnInteraction: true,
-    
-},
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    560: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
-    // when window width is >= 480px
-    860: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-    // when window width is >= 640px
-  },
-  loop: true,
-  // Infinity:true
-  
+
+
+jQuery(document).ready(function($) {
+  $('.slick.marquee').slick({
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+    arrows: false,
+    buttons: false
+  });
 });
+// var swiper3 = new Swiper(".our-work-home-slider", {
+//   slidesPerView: 1, // Adjust this number based on the desired number of slides to be visible at a time
+//   spaceBetween: 0,
+//   loop:true,
+//   autoplay: {
+//   delay: 1, 
+//   disableOnInteraction: false, 
+// },
+// slidesPerView: 'auto',
+// speed: 3000,
+//   breakpoints: {
+//     // when window width is >= 320px
+//     320: {
+//       slidesPerView: 1,
+//       spaceBetween: 20,
+//     },
+//     560: {
+//       slidesPerView: 2,
+//       spaceBetween: 20,
+//     },
+//     // when window width is >= 480px
+//     860: {
+//       slidesPerView: 3,
+//       spaceBetween: 20,
+//     },
+//     // when window width is >= 640px
+//   },
+//   loop: true,
+//   // Infinity:true
+  
+// });
 // var swiper3 = new Swiper(".team-slider", {
 //   autoplay: {
 //     delay: 1500,
