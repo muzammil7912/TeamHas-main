@@ -163,7 +163,8 @@ jQuery(document).ready(function($) {
     infinite: true,
     initialSlide: 1,
     arrows: false,
-    buttons: false
+    buttons: false,
+    pauseOnHover:true
   });
 });
 // var swiper3 = new Swiper(".our-work-home-slider", {
@@ -280,7 +281,8 @@ if(btnCareer.length){
 btn.forEach(btn_element=>{
   btn_element.onclick = function (e) {
     e.preventDefault();
-    modal.style.display = "flex";
+    // modal.style.display = "flex";
+    window.location.href="/bookacall.html"
   };
   
 })
@@ -304,3 +306,19 @@ window.onclick = function (event) {
     
   }
 };
+
+
+const dropBtnStart=document.querySelectorAll(".drop-form button")
+
+
+if(dropBtnStart.length){
+
+  dropBtnStart.forEach(v=>{
+    v.onclick = function (){
+      const dropinputEmail=this.previousElementSibling
+      localStorage.setItem("write_email",dropinputEmail.value)
+    window.location.href="/bookacall.html"
+
+    }
+  })
+}

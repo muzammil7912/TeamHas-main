@@ -278,7 +278,7 @@ header .container {
 
 
 
-.nav-list li.active::before,
+/* .nav-list li.active::before,
 .nav-list li::before {
     transition: all 0.3s ease-in-out;
     content: "";
@@ -293,7 +293,7 @@ header .container {
 .nav-list li.active::before,
 .nav-list li:hover::before {
     width: 100%;
-}
+} */
 
 .nav-list li a {
     text-decoration: none;
@@ -331,7 +331,7 @@ header .container {
 }
 .nav-list li:hover .drop-down .drop-large {
     /* display: block; */
-    z-index: 2;
+    z-index: 999999999999999999;
     visibility: visible;
     top: 0;
 }
@@ -362,13 +362,21 @@ header .container {
     min-width: 180px;
     /* text-align: center; */
     top: 2rem;
-    left: -300px;
+    left: -400px;
     color: #fff;
     transition: all 0.3s ease-in;
     display: flex;
-    padding: 20px;
+    /* padding: 20px; */
     border-radius: 10px;
+    overflow: hidden;
+    
 
+}
+.drop-services{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .drop-large ul{
     list-style: none;
@@ -380,15 +388,59 @@ header .container {
     font-size: 16px;
     min-width:200px;
     /* margin-left: 10px; */
-
+    
     p{
         font-size: 14px;
-        margin: 4px 0;
+        margin: 6px 0;
     }
+    h4{
+     margin: 20px 0 0;
+     position: relative;
+     width: max-content;
+     padding-right: 4px;
+     letter-spacing: 1px;
+    }
+    h4::before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background-color: #FC00FF;
+        transition: width 0.3s ease;
+      }
+    
+}
+.drop-large ul li a:hover {
+      h4::before {
+        width: 100%;
+        right: 0;
+      }
+
 }
 
 .drop-list{
     display: flex;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+.drop-btn{
+    display: flex;
+    a{
+        width: 100%;
+        text-align: center;
+        padding: 2px 0;
+    }
+
+    span{
+        font-size: 14px;
+    }
+}
+.drop-heading{
+    letter-spacing: 2px;
+    font-size: 20px;
+    padding-left: 4px;
 }
 .drop-content li a {
     padding: 10px 0;
@@ -404,6 +456,40 @@ header .container {
     font-size: 12px;
     float: left;
     margin: 10px;
+}
+.drop-newsletter{
+    background-color: #505152;
+
+    p{
+        font-size: 18px;
+    }
+}
+.drop-newsletter .drop-img img{
+    width: 300px;
+}
+.drop-newsletter .drop-text{
+    padding: 0 20px;
+}
+
+.drop-newsletter .drop-form{
+    padding: 10px 0;
+}
+.drop-newsletter .drop-form .form-control::placeholder{
+font-size: 12px;
+}
+.drop-newsletter .drop-form button{
+padding: 8px ;
+width: 100%;
+border: none;
+/* margin: 0 4px; */
+    font-size: 14px;
+
+}
+.drop-newsletter .drop-form .form-control{
+padding: 10px ;
+margin-bottom: 8px;
+border-radius: 5px;
+
 }
 .flex-center{
 display: flex;
@@ -522,6 +608,7 @@ align-items: center;
     right: -100%;
     height: 100svh;
     background: #1a1a1a;
+    overflow-y: scroll;
 }
 
 #menu li {
@@ -635,15 +722,103 @@ align-items: center;
     gap: 25px;
 
 }
-
+.service-detail.adcreatives .banner{
+    background: 
+    url('/imgs/servicebanner/1-01.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/2-01.png') right/30% no-repeat;
+}
+.service-detail.socialmedia .banner{
+    background: 
+    url('/imgs/servicebanner/social1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/social2.png') bottom right/30% no-repeat;
+}
+.service-detail.promotional .banner{
+    background: 
+    url('/imgs/servicebanner/promotional1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/promotional2.png')  right/30% no-repeat;
+}
+.service-detail.infographics .banner{
+    background: 
+    url('/imgs/servicebanner/infographics1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/infographics2.png')  right/30% no-repeat;
+}
+.service-detail.elearningdesign .banner{
+    background: 
+    url('/imgs/servicebanner/elearningdesign1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/elearningdesign2.png')  right/30% no-repeat;
+}
+.service-detail.packagingdesign .banner{
+    background: 
+    url('/imgs/servicebanner/packagingdesign1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/packagingdesign2.png')  right/30% no-repeat;
+}
+.service-detail.brandidentity .banner{
+    background: 
+    url('/imgs/servicebanner/brandidentity1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/brandidentity2.png')  right/30% no-repeat;
+}
+.service-detail.webdesign .banner{
+    background: 
+    url('/imgs/servicebanner/webdesign1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/webdesign2.png')  right/30% no-repeat;
+}
+.service-detail.merchandise .banner{
+    background: 
+    url('/imgs/servicebanner/merchandise1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/merchandise2.png')  right/30% no-repeat;
+}
+.service-detail.motiongraphic .banner{
+    background: 
+    url('/imgs/servicebanner/motiongraphic1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/motiongraphic2.png')  right/30% no-repeat;
+}
+.service-detail.animation .banner{
+    background: 
+    url('/imgs/servicebanner/animation1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/animation2.png')  right/30% no-repeat;
+}
+.service-detail.characterdesign .banner{
+    background: 
+    url('/imgs/servicebanner/characterdesign1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/characterdesign2.png')  right/30% no-repeat;
+}
+.service-detail.storyboarding .banner{
+    background: 
+    url('/imgs/servicebanner/characterdesign1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/characterdesign2.png')  right/30% no-repeat;
+}
+.service-detail.models .banner{
+    background: 
+    url('/imgs/servicebanner/models1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/models2.png')  right/30% no-repeat;
+}
+.service-detail.comics .banner{
+    background: 
+    url('/imgs/servicebanner/comics1.png') left/30% no-repeat ,  /* left image */
+    url('/imgs/pen.png') center/40% no-repeat,  /* center image */
+    url('/imgs/servicebanner/comics2.png')  right/30% no-repeat;
+}
 
 .service-detail .banner .main-heading-container h2{
-    width: max-content;
-    font-size: 55px;
+    width: 100%;
+    /* font-size: 55px; */
     text-transform: uppercase;
 }
 .service-detail .banner .main-heading-container {
-    width: min-content;
     margin: 0 auto;
     text-align: center;
 
@@ -1843,6 +2018,11 @@ footer .bottom-bar ul a {
 }
 
 @media screen and (max-width: 640px) {
+   
+    .gstd{
+        flex-direction: column;
+        align-items: start;
+    }
     .service-card {
         /* width: 90%; */
         padding: 30px 40px 40px 40px;
@@ -2102,6 +2282,15 @@ footer .bottom-bar ul a {
     }
     .home-sec-3  .statics-wrapper{
         justify-content: center !important;
+    }
+    .service-detail .remote-company {
+        flex-direction: column;
+        .right{
+            width: auto !important;
+        }
+        .left{
+            width: auto !important;
+        }
     }
 }
 
@@ -2656,6 +2845,23 @@ footer .bottom-bar ul a {
 }
 
 @media screen and (max-width:900px) {
+    .service-detail .about .box-container{
+        flex-direction: column;
+    }
+    .service-detail .box-container .left{
+        margin: 20px 0;
+        width: 100% !important;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+    }
+    .service-detail .box-container .right{
+        margin-top: 20px;
+        width: 100% !important;
+        text-align: center;
+
+    }
     .contact-page .contact-form {
         flex-direction: column;
     }
@@ -3007,13 +3213,13 @@ button{
    
     img{
         filter: grayscale(1);
-        width: 350px;
+        max-width: 350px;
 
 
     }
     .port-card{
         overflow: visible;
-        width: 350px;
+        max-width: 350px;
         margin: 0 1rem;
     
     }
