@@ -32,7 +32,7 @@ function onMouseHoverOut(e) {
   TweenMax.to($cursor, 0.4, {
     "--x": `${e.pageX - 316}px`,
     "--y":  `${e.pageY - 316}px`,
-    "--size": "31px",
+    "--size": "0px",
   });
 }
 
