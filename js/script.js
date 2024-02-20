@@ -1,6 +1,27 @@
 // AOS.init();
 var acc = document.getElementsByClassName("accordion-header");
 var i;
+
+
+document.onreadystatechange = function() {
+  var state = document.readyState
+  console.log(state)
+  if (state == 'complete') {
+    console.log("ssss")
+    const loader= document.querySelector('.loader')
+    if(loader){
+       loader.remove()
+    }
+    
+  }
+};
+
+
+
+
+
+
+
 const $cursor = document.querySelector(".ddfsasdsdaiv");
 const $hover = document.querySelectorAll(".main-heading span");
 
@@ -12,32 +33,58 @@ if ($hover.length) {
   }
 }
 
+
 function onMouseMove(e) {
+  let x = e.pageX - 170;
+  let y = e.pageY - 270;
+  let ratio = window.devicePixelRatio;
+  let zoom = 1 / document.documentElement.clientWidth * window.innerWidth;
   TweenMax.to($cursor, 0.4, {
-    "--x": `${e.pageX - 316}px`,
-    "--y":  `${e.pageY - 316}px`,
+    "--x": `${x * ratio * zoom}px`,
+    "--y": `${y * ratio * zoom}px`,
   });
 }
 
 function onMouseHover(e) {
+  let x = e.pageX - 170;
+  let y = e.pageY - 270;
+  let ratio = window.devicePixelRatio;
+  let zoom = 1 / document.documentElement.clientWidth * window.innerWidth;
   TweenMax.to($cursor, 0.4, {
-    "--x": `${e.pageX - 316}px`,
-    "--y":  `${e.pageY - 316}px`,
+    "--x": `${x * ratio * zoom}px`,
+    "--y": `${y * ratio * zoom}px`,
     "--size": "160px",
     "--sizesd": "160px",
   });
 }
 
 function onMouseHoverOut(e) {
+  //reset the size of the circle to the original value
   TweenMax.to($cursor, 0.4, {
-    "--x": `${e.pageX - 316}px`,
-    "--y":  `${e.pageY - 316}px`,
     "--size": "0px",
+    "--sizesd": "0px",
+  });
+}
+const moreAccordion=document.querySelector(".more-accordion");
+const accordionHidden=document.querySelector(".accordion-hidden")
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    console.log(this.nextElementSibling);
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+      panel.style.borderWidth = "0px";
+      panel.style.marginBottom = "0px";
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+      panel.style.borderWidth = "1px";
+      panel.style.marginBottom = "20px";
+    }
   });
 }
 
-const moreAccordion=document.querySelector(".more-accordion");
-const accordionHidden=document.querySelector(".accordion-hidden")
 
 if(moreAccordion){
   moreAccordion.addEventListener("click",function(){
@@ -122,9 +169,6 @@ if(moreAccordion){
 //   },
 // });
 var swiper3 = new Swiper(".client-slider", {
-  autoplay: {
-    delay: 1500,
-  },
   breakpoints: {
     // when window width is >= 320px
     320: {
@@ -140,18 +184,54 @@ var swiper3 = new Swiper(".client-slider", {
       slidesPerView: 3,
       spaceBetween: 20,
     },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    // when window width is >= 1200px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    1400: {
+      slidesPerView: 5,
+      spaceBetween: 20,
+    },
     // when window width is >= 640px
   },
   loop: true,
+  Infinity,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
 
 jQuery(document).ready(function($) {
   $('.slick.marquee').slick({
+    speed: 5000,
+    autoplay: true,
+    autoplaySpeed: 0,
+    centerMode: true,
+    cssEase: 'linear',
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    variableWidth: true,
+    infinite: true,
+    initialSlide: 1,
+    arrows: false,
+    buttons: false,
+    pauseOnHover:true
+  });
+});
+
+jQuery(document).ready(function($) {
+  $('.slick.marquee2').slick({
     speed: 5000,
     autoplay: true,
     autoplaySpeed: 0,
@@ -265,7 +345,9 @@ if(getStartBtn){
   getStartBtn.onclick = function (e) {
     modal.querySelector("input[name=email]").value=getStartInput.value
     e.preventDefault();
-    modal.style.display = "flex";
+    // modal.style.display = "flex";
+    window.location.href="/bookacall.html"
+
   };
 }
 if(btnCareer.length){
@@ -321,4 +403,16 @@ if(dropBtnStart.length){
 
     }
   })
+}
+
+
+const video = document.querySelector('.video')
+const videoPlaybtn = document.querySelector('.video-play')
+
+if (video&&videoPlaybtn) {
+  videoPlaybtn.onclick= function(e){
+    video.currentTime = 0; // Set video to start
+    video.play();
+    videoPlaybtn.remove()
+  }
 }
